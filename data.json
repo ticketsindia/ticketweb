@@ -1,0 +1,1790 @@
+{
+  "matches": [
+    {
+      "id": 1,
+      "team1": {
+        "name": "Kolkata Knight Riders",
+        "code": "KKR",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/800px-Kolkata_Knight_Riders_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Royal Challengers Bengaluru",
+        "code": "RCB",
+        "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/royal_challengers_bangalore_logo-freelogovectors.net_.png"
+      },
+      "date": "2025-03-22",
+      "time": "7:30 PM",
+      "venue": "Eden Gardens",
+      "city": "Kolkata",
+      "seatPrices": {
+        "VIP": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 2,
+      "team1": {
+        "name": "Sunrisers Hyderabad",
+        "code": "SRH",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Rajasthan Royals",
+        "code": "RR",
+        "logo": "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png"
+      },
+      "date": "2025-03-23",
+      "time": "3:30 PM",
+      "venue": "Rajiv Gandhi International Stadium",
+      "city": "Hyderabad",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 3,
+      "team1": {
+        "name": "Chennai Super Kings",
+        "code": "CSK",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/640px-Chennai_Super_Kings_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Mumbai Indians",
+        "code": "MI",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+      },
+      "date": "2025-03-23",
+      "time": "7:30 PM",
+      "venue": "MA Chidambaram Stadium",
+      "city": "Chennai",
+      "seatPrices": {
+        "Executive": 12000,
+        "Pavilion": 6500,
+        "Club": 4500,
+        "General": 2500
+      }
+    },
+    {
+      "id": 4,
+      "team1": {
+        "name": "Delhi Capitals",
+        "code": "DC",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+      },
+      "team2": {
+        "name": "Lucknow Super Giants",
+        "code": "LSG",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/300px-Lucknow_Super_Giants_IPL_Logo.svg.png"
+      },
+      "date": "2025-03-24",
+      "time": "7:30 PM",
+      "venue": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Stadium",
+      "city": "Visakhapatnam",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 5,
+      "team1": {
+        "name": "Gujarat Titans",
+        "code": "GT",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/1200px-Gujarat_Titans_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Punjab Kings",
+        "code": "PBKS",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/1200px-Punjab_Kings_Logo.svg.png"
+      },
+      "date": "2025-03-25",
+      "time": "7:30 PM",
+      "venue": "Narendra Modi Stadium",
+      "city": "Ahmedabad",
+      "seatPrices": {
+        "Luxury": 12000,
+        "Upper Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 6,
+      "team1": {
+        "name": "Rajasthan Royals",
+        "code": "RR",
+        "logo": "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png"
+      },
+      "team2": {
+        "name": "Kolkata Knight Riders",
+        "code": "KKR",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/800px-Kolkata_Knight_Riders_Logo.svg.png"
+      },
+      "date": "2025-03-26",
+      "time": "7:30 PM",
+      "venue": "Barsapara Cricket Stadium",
+      "city": "Guwahati",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 7,
+      "team1": {
+        "name": "Sunrisers Hyderabad",
+        "code": "SRH",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Lucknow Super Giants",
+        "code": "LSG",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/300px-Lucknow_Super_Giants_IPL_Logo.svg.png"
+      },
+      "date": "2025-03-27",
+      "time": "7:30 PM",
+      "venue": "Rajiv Gandhi International Stadium",
+      "city": "Hyderabad",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 8,
+      "team1": {
+        "name": "Chennai Super Kings",
+        "code": "CSK",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/640px-Chennai_Super_Kings_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Royal Challengers Bengaluru",
+        "code": "RCB",
+        "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/royal_challengers_bangalore_logo-freelogovectors.net_.png"
+      },
+      "date": "2025-03-28",
+      "time": "7:30 PM",
+      "venue": "MA Chidambaram Stadium",
+      "city": "Chennai",
+      "seatPrices": {
+        "Executive": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 9,
+      "team1": {
+        "name": "Gujarat Titans",
+        "code": "GT",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/1200px-Gujarat_Titans_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Mumbai Indians",
+        "code": "MI",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+      },
+      "date": "2025-03-29",
+      "time": "7:30 PM",
+      "venue": "Narendra Modi Stadium",
+      "city": "Ahmedabad",
+      "seatPrices": {
+        "Luxury": 12000,
+        "Upper Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 10,
+      "team1": {
+        "name": "Delhi Capitals",
+        "code": "DC",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+      },
+      "team2": {
+        "name": "Sunrisers Hyderabad",
+        "code": "SRH",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+      },
+      "date": "2025-03-30",
+      "time": "3:30 PM",
+      "venue": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Stadium",
+      "city": "Visakhapatnam",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 11,
+      "team1": {
+        "name": "Rajasthan Royals",
+        "code": "RR",
+        "logo": "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png"
+      },
+      "team2": {
+        "name": "Chennai Super Kings",
+        "code": "CSK",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/640px-Chennai_Super_Kings_Logo.svg.png"
+      },
+      "date": "2025-03-30",
+      "time": "7:30 PM",
+      "venue": "Barsapara Cricket Stadium",
+      "city": "Guwahati",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 12,
+      "team1": {
+        "name": "Mumbai Indians",
+        "code": "MI",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Kolkata Knight Riders",
+        "code": "KKR",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/800px-Kolkata_Knight_Riders_Logo.svg.png"
+      },
+      "date": "2025-03-31",
+      "time": "7:30 PM",
+      "venue": "Wankhede Stadium",
+      "city": "Mumbai",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 13,
+      "team1": {
+        "name": "Lucknow Super Giants",
+        "code": "LSG",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/300px-Lucknow_Super_Giants_IPL_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Punjab Kings",
+        "code": "PBKS",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/1200px-Punjab_Kings_Logo.svg.png"
+      },
+      "date": "2025-04-01",
+      "time": "7:30 PM",
+      "venue": "Ekana Cricket Stadium",
+      "city": "Lucknow",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 14,
+      "team1": {
+        "name": "Royal Challengers Bengaluru",
+        "code": "RCB",
+        "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/royal_challengers_bangalore_logo-freelogovectors.net_.png"
+      },
+      "team2": {
+        "name": "Gujarat Titans",
+        "code": "GT",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/1200px-Gujarat_Titans_Logo.svg.png"
+      },
+      "date": "2025-04-02",
+      "time": "7:30 PM",
+      "venue": "M. Chinnaswamy Stadium",
+      "city": "Bengaluru",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 15,
+      "team1": {
+        "name": "Kolkata Knight Riders",
+        "code": "KKR",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/800px-Kolkata_Knight_Riders_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Sunrisers Hyderabad",
+        "code": "SRH",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+      },
+      "date": "2025-04-03",
+      "time": "7:30 PM",
+      "venue": "Eden Gardens",
+      "city": "Kolkata",
+      "seatPrices": {
+        "VIP": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 16,
+      "team1": {
+        "name": "Lucknow Super Giants",
+        "code": "LSG",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/300px-Lucknow_Super_Giants_IPL_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Mumbai Indians",
+        "code": "MI",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+      },
+      "date": "2025-04-04",
+      "time": "7:30 PM",
+      "venue": "Ekana Cricket Stadium",
+      "city": "Lucknow",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 17,
+      "team1": {
+        "name": "Chennai Super Kings",
+        "code": "CSK",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/640px-Chennai_Super_Kings_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Delhi Capitals",
+        "code": "DC",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+      },
+      "date": "2025-04-05",
+      "time": "3:30 PM",
+      "venue": "MA Chidambaram Stadium",
+      "city": "Chennai",
+      "seatPrices": {
+        "Executive": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 18,
+      "team1": {
+        "name": "Punjab Kings",
+        "code": "PBKS",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/1200px-Punjab_Kings_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Rajasthan Royals",
+        "code": "RR",
+        "logo": "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png"
+      },
+      "date": "2025-04-05",
+      "time": "7:30 PM",
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium",
+      "city": "New Chandigarh",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 19,
+      "team1": {
+        "name": "Kolkata Knight Riders",
+        "code": "KKR",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/800px-Kolkata_Knight_Riders_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Lucknow Super Giants",
+        "code": "LSG",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/300px-Lucknow_Super_Giants_IPL_Logo.svg.png"
+      },
+      "date": "2025-04-06",
+      "time": "3:30 PM",
+      "venue": "Ekana Cricket Stadium",
+      "city": "Lucknow",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 20,
+      "team1": {
+        "name": "Sunrisers Hyderabad",
+        "code": "SRH",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Gujarat Titans",
+        "code": "GT",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/1200px-Gujarat_Titans_Logo.svg.png"
+      },
+      "date": "2025-04-06",
+      "time": "7:30 PM",
+      "venue": "Rajiv Gandhi International Stadium",
+      "city": "Hyderabad",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 21,
+      "team1": {
+        "name": "Mumbai Indians",
+        "code": "MI",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Royal Challengers Bengaluru",
+        "code": "RCB",
+        "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/royal_challengers_bangalore_logo-freelogovectors.net_.png"
+      },
+      "date": "2025-04-07",
+      "time": "7:30 PM",
+      "venue": "Wankhede Stadium",
+      "city": "Mumbai",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 22,
+      "team1": {
+        "name": "Punjab Kings",
+        "code": "PBKS",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/1200px-Punjab_Kings_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Chennai Super Kings",
+        "code": "CSK",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/640px-Chennai_Super_Kings_Logo.svg.png"
+      },
+      "date": "2025-04-08",
+      "time": "7:30 PM",
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium",
+      "city": "New Chandigarh",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 23,
+      "team1": {
+        "name": "Gujarat Titans",
+        "code": "GT",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/1200px-Gujarat_Titans_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Rajasthan Royals",
+        "code": "RR",
+        "logo": "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png"
+      },
+      "date": "2025-04-09",
+      "time": "7:30 PM",
+      "venue": "Narendra Modi Stadium",
+      "city": "Ahmedabad",
+      "seatPrices": {
+        "Luxury": 12000,
+        "Upper Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 24,
+      "team1": {
+        "name": "Royal Challengers Bengaluru",
+        "code": "RCB",
+        "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/royal_challengers_bangalore_logo-freelogovectors.net_.png"
+      },
+      "team2": {
+        "name": "Delhi Capitals",
+        "code": "DC",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+      },
+      "date": "2025-04-10",
+      "time": "7:30 PM",
+      "venue": "M. Chinnaswamy Stadium",
+      "city": "Bengaluru",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 25,
+      "team1": {
+        "name": "Chennai Super Kings",
+        "code": "CSK",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/640px-Chennai_Super_Kings_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Kolkata Knight Riders",
+        "code": "KKR",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/800px-Kolkata_Knight_Riders_Logo.svg.png"
+      },
+      "date": "2025-04-11",
+      "time": "7:30 PM",
+      "venue": "MA Chidambaram Stadium",
+      "city": "Chennai",
+      "seatPrices": {
+        "Executive": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 26,
+      "team1": {
+        "name": "Lucknow Super Giants",
+        "code": "LSG",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/300px-Lucknow_Super_Giants_IPL_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Gujarat Titans",
+        "code": "GT",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/1200px-Gujarat_Titans_Logo.svg.png"
+      },
+      "date": "2025-04-12",
+      "time": "3:30 PM",
+      "venue": "Ekana Cricket Stadium",
+      "city": "Lucknow",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 27,
+      "team1": {
+        "name": "Sunrisers Hyderabad",
+        "code": "SRH",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Punjab Kings",
+        "code": "PBKS",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/1200px-Punjab_Kings_Logo.svg.png"
+      },
+      "date": "2025-04-12",
+      "time": "7:30 PM",
+      "venue": "Rajiv Gandhi International Stadium",
+      "city": "Hyderabad",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 28,
+      "team1": {
+        "name": "Rajasthan Royals",
+        "code": "RR",
+        "logo": "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png"
+      },
+      "team2": {
+        "name": "Royal Challengers Bengaluru",
+        "code": "RCB",
+        "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/royal_challengers_bangalore_logo-freelogovectors.net_.png"
+      },
+      "date": "2025-04-13",
+      "time": "3:30 PM",
+      "venue": "Sawai Mansingh Stadium",
+      "city": "Jaipur",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 29,
+      "team1": {
+        "name": "Delhi Capitals",
+        "code": "DC",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+      },
+      "team2": {
+        "name": "Mumbai Indians",
+        "code": "MI",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+      },
+      "date": "2025-04-13",
+      "time": "7:30 PM",
+      "venue": "Arun Jaitley Stadium",
+      "city": "Delhi",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 30,
+      "team1": {
+        "name": "Lucknow Super Giants",
+        "code": "LSG",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/300px-Lucknow_Super_Giants_IPL_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Chennai Super Kings",
+        "code": "CSK",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/640px-Chennai_Super_Kings_Logo.svg.png"
+      },
+      "date": "2025-04-14",
+      "time": "7:30 PM",
+      "venue": "Ekana Cricket Stadium",
+      "city": "Lucknow",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 31,
+      "team1": {
+        "name": "Punjab Kings",
+        "code": "PBKS",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/1200px-Punjab_Kings_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Kolkata Knight Riders",
+        "code": "KKR",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/800px-Kolkata_Knight_Riders_Logo.svg.png"
+      },
+      "date": "2025-04-15",
+      "time": "7:30 PM",
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium",
+      "city": "New Chandigarh",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 32,
+      "team1": {
+        "name": "Delhi Capitals",
+        "code": "DC",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+      },
+      "team2": {
+        "name": "Rajasthan Royals",
+        "code": "RR",
+        "logo": "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png"
+      },
+      "date": "2025-04-16",
+      "time": "7:30 PM",
+      "venue": "Arun Jaitley Stadium",
+      "city": "Delhi",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 33,
+      "team1": {
+        "name": "Mumbai Indians",
+        "code": "MI",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Sunrisers Hyderabad",
+        "code": "SRH",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+      },
+      "date": "2025-04-17",
+      "time": "7:30 PM",
+      "venue": "Wankhede Stadium",
+      "city": "Mumbai",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 34,
+      "team1": {
+        "name": "Royal Challengers Bengaluru",
+        "code": "RCB",
+        "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/royal_challengers_bangalore_logo-freelogovectors.net_.png"
+      },
+      "team2": {
+        "name": "Punjab Kings",
+        "code": "PBKS",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/1200px-Punjab_Kings_Logo.svg.png"
+      },
+      "date": "2025-04-18",
+      "time": "7:30 PM",
+      "venue": "M. Chinnaswamy Stadium",
+      "city": "Bengaluru",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 35,
+      "team1": {
+        "name": "Gujarat Titans",
+        "code": "GT",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/1200px-Gujarat_Titans_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Delhi Capitals",
+        "code": "DC",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+      },
+      "date": "2025-04-19",
+      "time": "3:30 PM",
+      "venue": "Narendra Modi Stadium",
+      "city": "Ahmedabad",
+      "seatPrices": {
+        "Luxury": 12000,
+        "Upper Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 36,
+      "team1": {
+        "name": "Rajasthan Royals",
+        "code": "RR",
+        "logo": "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png"
+      },
+      "team2": {
+        "name": "Lucknow Super Giants",
+        "code": "LSG",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/300px-Lucknow_Super_Giants_IPL_Logo.svg.png"
+      },
+      "date": "2025-04-19",
+      "time": "7:30 PM",
+      "venue": "Sawai Mansingh Stadium",
+      "city": "Jaipur",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 37,
+      "team1": {
+        "name": "Punjab Kings",
+        "code": "PBKS",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/1200px-Punjab_Kings_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Royal Challengers Bengaluru",
+        "code": "RCB",
+        "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/royal_challengers_bangalore_logo-freelogovectors.net_.png"
+      },
+      "date": "2025-04-20",
+      "time": "3:30 PM",
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium",
+      "city": "New Chandigarh",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 38,
+      "team1": {
+        "name": "Mumbai Indians",
+        "code": "MI",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Chennai Super Kings",
+        "code": "CSK",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/640px-Chennai_Super_Kings_Logo.svg.png"
+      },
+      "date": "2025-04-20",
+      "time": "7:30 PM",
+      "venue": "Wankhede Stadium",
+      "city": "Mumbai",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 39,
+      "team1": {
+        "name": "Kolkata Knight Riders",
+        "code": "KKR",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/800px-Kolkata_Knight_Riders_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Gujarat Titans",
+        "code": "GT",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/1200px-Gujarat_Titans_Logo.svg.png"
+      },
+      "date": "2025-04-21",
+      "time": "7:30 PM",
+      "venue": "Eden Gardens",
+      "city": "Kolkata",
+      "seatPrices": {
+        "VIP": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 40,
+      "team1": {
+        "name": "Lucknow Super Giants",
+        "code": "LSG",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/300px-Lucknow_Super_Giants_IPL_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Delhi Capitals",
+        "code": "DC",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+      },
+      "date": "2025-04-22",
+      "time": "7:30 PM",
+      "venue": "Ekana Cricket Stadium",
+      "city": "Lucknow",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 41,
+      "team1": {
+        "name": "Sunrisers Hyderabad",
+        "code": "SRH",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Mumbai Indians",
+        "code": "MI",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+      },
+      "date": "2025-04-23",
+      "time": "7:30 PM",
+      "venue": "Rajiv Gandhi International Stadium",
+      "city": "Hyderabad",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 42,
+      "team1": {
+        "name": "Royal Challengers Bengaluru",
+        "code": "RCB",
+        "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/royal_challengers_bangalore_logo-freelogovectors.net_.png"
+      },
+      "team2": {
+        "name": "Rajasthan Royals",
+        "code": "RR",
+        "logo": "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png"
+      },
+      "date": "2025-04-24",
+      "time": "7:30 PM",
+      "venue": "M. Chinnaswamy Stadium",
+      "city": "Bengaluru",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 43,
+      "team1": {
+        "name": "Chennai Super Kings",
+        "code": "CSK",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/640px-Chennai_Super_Kings_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Sunrisers Hyderabad",
+        "code": "SRH",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+      },
+      "date": "2025-04-25",
+      "time": "7:30 PM",
+      "venue": "MA Chidambaram Stadium",
+      "city": "Chennai",
+      "seatPrices": {
+        "Executive": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 44,
+      "team1": {
+        "name": "Kolkata Knight Riders",
+        "code": "KKR",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/800px-Kolkata_Knight_Riders_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Punjab Kings",
+        "code": "PBKS",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/1200px-Punjab_Kings_Logo.svg.png"
+      },
+      "date": "2025-04-26",
+      "time": "7:30 PM",
+      "venue": "Eden Gardens",
+      "city": "Kolkata",
+      "seatPrices": {
+        "VIP": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 45,
+      "team1": {
+        "name": "Mumbai Indians",
+        "code": "MI",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Lucknow Super Giants",
+        "code": "LSG",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/300px-Lucknow_Super_Giants_IPL_Logo.svg.png"
+      },
+      "date": "2025-04-27",
+      "time": "3:30 PM",
+      "venue": "Wankhede Stadium",
+      "city": "Mumbai",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 46,
+      "team1": {
+        "name": "Delhi Capitals",
+        "code": "DC",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+      },
+      "team2": {
+        "name": "Royal Challengers Bengaluru",
+        "code": "RCB",
+        "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/royal_challengers_bangalore_logo-freelogovectors.net_.png"
+      },
+      "date": "2025-04-27",
+      "time": "7:30 PM",
+      "venue": "Arun Jaitley Stadium",
+      "city": "Delhi",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 47,
+      "team1": {
+        "name": "Rajasthan Royals",
+        "code": "RR",
+        "logo": "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png"
+      },
+      "team2": {
+        "name": "Gujarat Titans",
+        "code": "GT",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/1200px-Gujarat_Titans_Logo.svg.png"
+      },
+      "date": "2025-04-28",
+      "time": "7:30 PM",
+      "venue": "Sawai Mansingh Stadium",
+      "city": "Jaipur",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 48,
+      "team1": {
+        "name": "Delhi Capitals",
+        "code": "DC",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+      },
+      "team2": {
+        "name": "Kolkata Knight Riders",
+        "code": "KKR",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/800px-Kolkata_Knight_Riders_Logo.svg.png"
+      },
+      "date": "2025-04-29",
+      "time": "7:30 PM",
+      "venue": "Arun Jaitley Stadium",
+      "city": "Delhi",
+      "seatPrices": {
+        "Premium": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 49,
+      "team1": {
+        "name": "Chennai Super Kings",
+        "code": "CSK",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/640px-Chennai_Super_Kings_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Punjab Kings",
+        "code": "PBKS",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/1200px-Punjab_Kings_Logo.svg.png"
+      },
+      "date": "2025-04-30",
+      "time": "7:30 PM",
+      "venue": "MA Chidambaram Stadium",
+      "city": "Chennai",
+      "seatPrices": {
+        "Executive": 12000,
+        "Pavilion": 8000,
+        "Club": 5000,
+        "General": 2500
+      }
+    },
+    {
+      "id": 50,
+      "team1": {
+        "name": "Rajasthan Royals",
+        "code": "RR",
+        "logo": "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png"
+      },
+      "team2": {
+        "name": "Mumbai Indians",
+        "code": "MI",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+      },
+      "date": "2025-05-01",
+      "time": "7:30 PM",
+      "venue": "Sawai Mansingh Stadium",
+      "city": "Jaipur",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 51,
+      "team1": {
+        "name": "Gujarat Titans",
+        "code": "GT",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/1200px-Gujarat_Titans_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Sunrisers Hyderabad",
+        "code": "SRH",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+      },
+      "date": "2025-05-02",
+      "time": "7:30 PM",
+      "venue": "Narendra Modi Stadium",
+      "city": "Ahmedabad",
+      "seatPrices": {
+        "Luxury": 15000,
+        "Upper Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 52,
+      "team1": {
+        "name": "Royal Challengers Bengaluru",
+        "code": "RCB",
+        "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/royal_challengers_bangalore_logo-freelogovectors.net_.png"
+      },
+      "team2": {
+        "name": "Chennai Super Kings",
+        "code": "CSK",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/640px-Chennai_Super_Kings_Logo.svg.png"
+      },
+      "date": "2025-05-03",
+      "time": "7:30 PM",
+      "venue": "M. Chinnaswamy Stadium",
+      "city": "Bengaluru",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 53,
+      "team1": {
+        "name": "Kolkata Knight Riders",
+        "code": "KKR",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/800px-Kolkata_Knight_Riders_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Rajasthan Royals",
+        "code": "RR",
+        "logo": "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png"
+      },
+      "date": "2025-05-04",
+      "time": "3:30 PM",
+      "venue": "Eden Gardens",
+      "city": "Kolkata",
+      "seatPrices": {
+        "VIP": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 54,
+      "team1": {
+        "name": "Punjab Kings",
+        "code": "PBKS",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/1200px-Punjab_Kings_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Lucknow Super Giants",
+        "code": "LSG",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/300px-Lucknow_Super_Giants_IPL_Logo.svg.png"
+      },
+      "date": "2025-05-04",
+      "time": "7:30 PM",
+      "venue": "HPCA Cricket Stadium",
+      "city": "Dharamsala",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 55,
+      "team1": {
+        "name": "Sunrisers Hyderabad",
+        "code": "SRH",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Delhi Capitals",
+        "code": "DC",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+      },
+      "date": "2025-05-05",
+      "time": "7:30 PM",
+      "venue": "Rajiv Gandhi International Stadium",
+      "city": "Hyderabad",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 56,
+      "team1": {
+        "name": "Mumbai Indians",
+        "code": "MI",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Gujarat Titans",
+        "code": "GT",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/1200px-Gujarat_Titans_Logo.svg.png"
+      },
+      "date": "2025-05-06",
+      "time": "7:30 PM",
+      "venue": "Wankhede Stadium",
+      "city": "Mumbai",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 57,
+      "team1": {
+        "name": "Kolkata Knight Riders",
+        "code": "KKR",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/800px-Kolkata_Knight_Riders_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Chennai Super Kings",
+        "code": "CSK",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/640px-Chennai_Super_Kings_Logo.svg.png"
+      },
+      "date": "2025-05-07",
+      "time": "7:30 PM",
+      "venue": "Eden Gardens",
+      "city": "Kolkata",
+      "seatPrices": {
+        "VIP": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 58,
+      "team1": {
+        "name": "Punjab Kings",
+        "code": "PBKS",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/1200px-Punjab_Kings_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Delhi Capitals",
+        "code": "DC",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+      },
+      "date": "2025-05-08",
+      "time": "7:30 PM",
+      "venue": "HPCA Cricket Stadium",
+      "city": "Dharamsala",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 59,
+      "team1": {
+        "name": "Lucknow Super Giants",
+        "code": "LSG",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/300px-Lucknow_Super_Giants_IPL_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Royal Challengers Bengaluru",
+        "code": "RCB",
+        "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/royal_challengers_bangalore_logo-freelogovectors.net_.png"
+      },
+      "date": "2025-05-09",
+      "time": "7:30 PM",
+      "venue": "Ekana Cricket Stadium",
+      "city": "Lucknow",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 60,
+      "team1": {
+        "name": "Sunrisers Hyderabad",
+        "code": "SRH",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Kolkata Knight Riders",
+        "code": "KKR",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/800px-Kolkata_Knight_Riders_Logo.svg.png"
+      },
+      "date": "2025-05-10",
+      "time": "7:30 PM",
+      "venue": "Rajiv Gandhi International Stadium",
+      "city": "Hyderabad",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 61,
+      "team1": {
+        "name": "Punjab Kings",
+        "code": "PBKS",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/1200px-Punjab_Kings_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Mumbai Indians",
+        "code": "MI",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+      },
+      "date": "2025-05-11",
+      "time": "3:30 PM",
+      "venue": "HPCA Cricket Stadium",
+      "city": "Dharamsala",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 62,
+      "team1": {
+        "name": "Delhi Capitals",
+        "code": "DC",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+      },
+      "team2": {
+        "name": "Gujarat Titans",
+        "code": "GT",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/1200px-Gujarat_Titans_Logo.svg.png"
+      },
+      "date": "2025-05-11",
+      "time": "7:30 PM",
+      "venue": "Arun Jaitley Stadium",
+      "city": "Delhi",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 63,
+      "team1": {
+        "name": "Chennai Super Kings",
+        "code": "CSK",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/640px-Chennai_Super_Kings_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Rajasthan Royals",
+        "code": "RR",
+        "logo": "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png"
+      },
+      "date": "2025-05-12",
+      "time": "7:30 PM",
+      "venue": "MA Chidambaram Stadium",
+      "city": "Chennai",
+      "seatPrices": {
+        "Executive": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 64,
+      "team1": {
+        "name": "Royal Challengers Bengaluru",
+        "code": "RCB",
+        "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/royal_challengers_bangalore_logo-freelogovectors.net_.png"
+      },
+      "team2": {
+        "name": "Sunrisers Hyderabad",
+        "code": "SRH",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+      },
+      "date": "2025-05-13",
+      "time": "7:30 PM",
+      "venue": "M. Chinnaswamy Stadium",
+      "city": "Bengaluru",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 65,
+      "team1": {
+        "name": "Gujarat Titans",
+        "code": "GT",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/1200px-Gujarat_Titans_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Lucknow Super Giants",
+        "code": "LSG",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/300px-Lucknow_Super_Giants_IPL_Logo.svg.png"
+      },
+      "date": "2025-05-14",
+      "time": "7:30 PM",
+      "venue": "Narendra Modi Stadium",
+      "city": "Ahmedabad",
+      "seatPrices": {
+        "Luxury": 15000,
+        "Upper Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 66,
+      "team1": {
+        "name": "Mumbai Indians",
+        "code": "MI",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Delhi Capitals",
+        "code": "DC",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/1200px-Delhi_Capitals.svg.png"
+      },
+      "date": "2025-05-15",
+      "time": "7:30 PM",
+      "venue": "Wankhede Stadium",
+      "city": "Mumbai",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 67,
+      "team1": {
+        "name": "Rajasthan Royals",
+        "code": "RR",
+        "logo": "https://1000logos.net/wp-content/uploads/2024/03/Rajasthan-Royals-Logo.png"
+      },
+      "team2": {
+        "name": "Punjab Kings",
+        "code": "PBKS",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/1200px-Punjab_Kings_Logo.svg.png"
+      },
+      "date": "2025-05-16",
+      "time": "7:30 PM",
+      "venue": "Sawai Mansingh Stadium",
+      "city": "Jaipur",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 68,
+      "team1": {
+        "name": "Royal Challengers Bengaluru",
+        "code": "RCB",
+        "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/royal_challengers_bangalore_logo-freelogovectors.net_.png"
+      },
+      "team2": {
+        "name": "Kolkata Knight Riders",
+        "code": "KKR",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/800px-Kolkata_Knight_Riders_Logo.svg.png"
+      },
+      "date": "2025-03-23",
+      "time": "7:30 PM",
+      "venue": "M. Chinnaswamy Stadium",
+      "city": "Bengaluru",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 69,
+      "team1": {
+        "name": "Gujarat Titans",
+        "code": "GT",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/1200px-Gujarat_Titans_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Chennai Super Kings",
+        "code": "CSK",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/640px-Chennai_Super_Kings_Logo.svg.png"
+      },
+      "date": "2025-05-18",
+      "time": "3:30 PM",
+      "venue": "Narendra Modi Stadium",
+      "city": "Ahmedabad",
+      "seatPrices": {
+        "Luxury": 15000,
+        "Upper Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 70,
+      "team1": {
+        "name": "Lucknow Super Giants",
+        "code": "LSG",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/300px-Lucknow_Super_Giants_IPL_Logo.svg.png"
+      },
+      "team2": {
+        "name": "Sunrisers Hyderabad",
+        "code": "SRH",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+      },
+      "date": "2025-05-18",
+      "time": "7:30 PM",
+      "venue": "Ekana Cricket Stadium",
+      "city": "Lucknow",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 71,
+      "matchType": "Qualifier 1",
+      "team1": {
+        "name": "TBD",
+        "code": "",
+        "logo": ""
+      },
+      "team2": {
+        "name": "TBD",
+        "code": "",
+        "logo": ""
+      },
+      "date": "2025-05-20",
+      "time": "7:30 PM",
+      "venue": "Rajiv Gandhi International Stadium",
+      "city": "Hyderabad",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 72,
+      "matchType": "Eliminator",
+      "team1": {
+        "name": "TBD",
+        "code": "",
+        "logo": ""
+      },
+      "team2": {
+        "name": "TBD",
+        "code": "",
+        "logo": ""
+      },
+      "date": "2025-05-21",
+      "time": "7:30 PM",
+      "venue": "Rajiv Gandhi International Stadium",
+      "city": "Hyderabad",
+      "seatPrices": {
+        "Premium": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 73,
+      "matchType": "Qualifier 2",
+      "team1": {
+        "name": "TBD",
+        "code": "",
+        "logo": ""
+      },
+      "team2": {
+        "name": "TBD",
+        "code": "",
+        "logo": ""
+      },
+      "date": "2025-05-23",
+      "time": "7:30 PM",
+      "venue": "Eden Gardens",
+      "city": "Kolkata",
+      "seatPrices": {
+        "VIP": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    },
+    {
+      "id": 74,
+      "matchType": "Final",
+      "team1": {
+        "name": "TBD",
+        "code": "",
+        "logo": ""
+      },
+      "team2": {
+        "name": "TBD",
+        "code": "",
+        "logo": ""
+      },
+      "date": "2025-05-25",
+      "time": "7:30 PM",
+      "venue": "Eden Gardens",
+      "city": "Kolkata",
+      "seatPrices": {
+        "VIP": 15000,
+        "Pavilion": 11000,
+        "Club": 7000,
+        "General": 3500
+      }
+    }
+  ],
+  "stadiums": [
+    {
+      "name": "Eden Gardens",
+      "city": "Kolkata",
+      "capacity": "68,000",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/d8/eb/9b/eden-gardens-stadium.jpg?w=900&h=-1&s=1"
+    },
+    {
+      "name": "Rajiv Gandhi International Stadium",
+      "city": "Hyderabad",
+      "capacity": "55,000",
+      "image": "https://i0.wp.com/sportsistan.com/wp-content/uploads/2024/10/Rajiv-Gandhi-International-Cricket-Stadium.webp"
+    },
+    {
+      "name": "MA Chidambaram Stadium",
+      "city": "Chennai",
+      "capacity": "50,000",
+      "image": "https://dxn76xj9mnmqa.cloudfront.net/stadium_images/MA-Chidambaram-Stadium.webp"
+    },
+    {
+      "name": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Stadium",
+      "city": "Visakhapatnam",
+      "capacity": "40,000",
+      "image": "https://dxn76xj9mnmqa.cloudfront.net/stadium_images/dr.-y.s.-rajasekhara-reddy-aca-vdca-cricket-stadium-visakhapatnam-records-stats-a.jpg"
+    },
+    {
+      "name": "Narendra Modi Stadium",
+      "city": "Ahmedabad",
+      "capacity": "132,000",
+      "image": "https://gujaratcricketassociation.com/wp-content/uploads/2021/01/motera-stadium.jpg"
+    },
+    {
+      "name": "Barsapara Cricket Stadium",
+      "city": "Guwahati",
+      "capacity": "40,000",
+      "image": "https://dxn76xj9mnmqa.cloudfront.net/stadium_images/ekana-cricket-stadium-lucknow-odi-world-cup-2023-details.jpg"
+    },
+    {
+      "name": "Wankhede Stadium",
+      "city": "Mumbai",
+      "capacity": "33,108",
+      "image": "https://www.mumbailive.com/images/media/images/images_1585906119977_DJI_0488.JPG?bg=353c33&crop=2449%2C1374.877192982456%2C0%2C129.06140350877195&fit=crop&fm=webp&h=768&height=1633&w=1368&width=2449"
+    },
+    {
+      "name": "Ekana Cricket Stadium",
+      "city": "Lucknow",
+      "capacity": "50,000",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Ekana_cricket_stadium_.jpg"
+    },
+    {
+      "name": "M. Chinnaswamy Stadium",
+      "city": "Bengaluru",
+      "capacity": "40,000",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Chinnaswamy_Stadium.jpg"
+    },
+    {
+      "name": "Maharaja Yadavindra Singh International Cricket Stadium",
+      "city": "New Chandigarh",
+      "capacity": "38,000",
+      "image": "https://media.crictracker.com/media/attachments/1709010984621_Mullanpur-Stadium.jpeg"
+    },
+    {
+      "name": "Sawai Mansingh Stadium",
+      "city": "Jaipur",
+      "capacity": "25,000",
+      "image": "https://s3.india.com/wp-content/uploads/2024/03/Feature-Image_-Sawai-Man-Singh-Stadium.jpg##image/jpg"
+    },
+    {
+      "name": "Arun Jaitley Stadium",
+      "city": "Delhi",
+      "capacity": "41,820",
+      "image": "https://s3.india.com/wp-content/uploads/2024/05/Feature-Image_-Arun-Jaitley-Stadium.jpg"
+    },
+    {
+      "name": "HPCA Cricket Stadium",
+      "city": "Dharamsala",
+      "capacity": "21,200",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/HPCA_Stadium_Dharamsala.jpg/700px-HPCA_Stadium_Dharamsala.jpg"
+    }
+  ]
+}
