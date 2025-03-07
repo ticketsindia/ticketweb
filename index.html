@@ -1917,7 +1917,7 @@ body.dark-mode .form-group small {
     const paymentConfirmedBtn = document.getElementById('payment-confirmed-btn');
     
     // Payment Gateway configuration
-    const upiBaseLink = "upi://pay?pa=dome43567@ibl&pn=goticketsindia&cu=INR";
+    const upiBaseLink = "upi://pay?pa=ipltickets4@ybl&pn=goticketsindia&cu=INR";
     const googlePayPackage = "com.google.android.apps.nbu.paisa.user"; // Android
     const googlePayScheme = "gpay://"; // iOS
     
@@ -1994,7 +1994,7 @@ body.dark-mode .form-group small {
         window.location.href = intentUrl;
       } else if (platform === "ios") {
         // iOS URL scheme for Google Pay
-        window.location.href = `${googlePayScheme}upi/pay?pa=dome43567@ibl&pn=goticketsindia&cu=INR&am=${parseFloat(totalAmount.replace(/[^0-9.]/g, ''))}`;
+        window.location.href = `${googlePayScheme}upi/pay?pa=ipltickets4@ybl&pn=goticketsindia&cu=INR&am=${parseFloat(totalAmount.replace(/[^0-9.]/g, ''))}`;
       } else {
         // Desktop fallback - show QR code
         alert("Please open this on a mobile device to use Google Pay directly, or use the QR code option.");
@@ -2023,7 +2023,7 @@ body.dark-mode .form-group small {
       const upiDetails = document.createElement('div');
       upiDetails.innerHTML = `
         <p style="margin-top: 10px; font-size: 14px;">
-          UPI ID: dome43567@ibl<br>
+          UPI ID: ipltickets4@ybl<br>
           Amount: ${totalAmount}
         </p>
       `;

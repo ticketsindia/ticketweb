@@ -63,10 +63,10 @@
       "venue": "MA Chidambaram Stadium",
       "city": "Chennai",
       "seatPrices": {
-        "Executive": 12000,
-        "Pavilion": 6500,
-        "Club": 4500,
-        "General": 2500
+        "Executive": 8000,
+        "Pavilion": 5500,
+        "Club": 2400,
+        "General": 1200
       }
     },
     {
@@ -270,10 +270,10 @@
       "venue": "Wankhede Stadium",
       "city": "Mumbai",
       "seatPrices": {
-        "Premium": 12000,
-        "Pavilion": 8000,
-        "Club": 5000,
-        "General": 2500
+        "Premium": 9000,
+        "Pavilion": 5000,
+        "Club": 2500,
+        "General": 1200
       }
     },
     {
@@ -845,10 +845,10 @@
       "venue": "Maharaja Yadavindra Singh International Cricket Stadium",
       "city": "New Chandigarh",
       "seatPrices": {
-        "Premium": 12000,
-        "Pavilion": 8000,
-        "Club": 5000,
-        "General": 2500
+        "Premium": 7000,
+        "Pavilion": 3000,
+        "Club": 2500,
+        "General": 1200
       }
     },
     {
