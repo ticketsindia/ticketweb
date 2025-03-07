@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <!-- Flatpickr CSS for professional date picker -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <!-- QR Code library for payment QR codes -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  
   <style>
     :root {
   --primary: #0159a3;
@@ -1015,30 +1019,8 @@ footer {
   from { opacity: 0; transform: scale(0.8); }
   to { opacity: 1; transform: scale(1); }
 }
-/* --- New Styles for Payment and Confirmation Modals --- */
-.payment-container {
-  text-align: center;
-  padding: 30px;
-}
-.upi-pay1 {
-  display: inline-block;
-  background-color: #4285f4;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 20px;
-}
-.upi-pay1:hover {
-  background-color: #357abd;
-}
-.confirmation-container input,
-.confirmation-container textarea,
-.confirmation-container button {
-  margin-top: 10px;
-}
 
+/* Teams Scroller */
 .teams-scroller {
   background: linear-gradient(90deg, var(--primary), #0066cc);
   padding: 20px 0;
@@ -1091,7 +1073,6 @@ footer {
     height: 40px;
   }
 }
-
 
 /* FAQ Section Styling */
 .faq-section {
@@ -1204,6 +1185,189 @@ body.dark-mode .faq-answer p {
   }
 }
 
+body:not(.dark-mode) .team, body:not(.dark-mode) .modal-teams span { color: var(--dark); }
+
+/* Payment Methods Styling */
+.payment-methods {
+  margin-top: 20px;
+}
+
+.payment-option-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.payment-option-btn:hover {
+  background-color: #f5f5f5;
+  border-color: var(--primary);
+}
+
+#qr-code {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+/* Dark mode adjustments for payment options */
+body.dark-mode .payment-option-btn {
+  background-color: #3a3a3a;
+  border-color: #555;
+  color: white;
+}
+
+body.dark-mode .payment-option-btn:hover {
+  background-color: #444;
+  border-color: var(--primary);
+}
+
+body.dark-mode #qr-code-container {
+  color: white;
+}
+
+body.dark-mode #qr-code-container > div {
+  background-color: #444;
+}
+
+/* Confirmation Steps Styling */
+.confirmation-steps {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.confirmation-step {
+  display: none;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.confirmation-step.active {
+  display: block;
+}
+
+.step-indicator {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.detail-card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group small {
+  color: #777;
+  font-size: 12px;
+}
+
+.confirmation-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.confirmation-btn:hover {
+  background-color: var(--accent);
+  transform: scale(1.03);
+}
+
+/* Dark mode adjustments for confirmation steps */
+body.dark-mode .confirmation-step {
+  background-color: #3a3a3a;
+  color: white;
+}
+
+body.dark-mode .detail-card {
+  background-color: #444;
+}
+
+body.dark-mode .detail-row {
+  border-bottom: 1px solid #555;
+}
+
+body.dark-mode .detail-label {
+  color: #ddd;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background-color: #444;
+  border-color: #555;
+  color: white;
+}
+
+body.dark-mode .form-group small {
+  color: #bbb;
+}
   </style>
 </head>
 <body>
@@ -1299,9 +1463,6 @@ body.dark-mode .faq-answer p {
     </div>
   </section>
 
-
-
-
   <!-- Teams Scroller Section -->
 <section class="teams-scroller" id="teams">
   <div class="scroll-container">
@@ -1309,75 +1470,72 @@ body.dark-mode .faq-answer p {
       <!-- First set of teams -->
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/1200px-Chennai_Super_Kings_Logo.svg.png" alt="Chennai Super Kings Logo" />
-        <span>Chennai Super Kings</span>
+        <!-- <span>Chennai Super Kings</span> -->
       </div>
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/sa/b/b3/Mumbai_Indians_Logo.png?20120501114446" alt="Mumbai Indians Logo" />
-        <span>Mumbai Indians</span>
+        <!-- <span>Mumbai Indians</span> -->
       </div>
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Royal_Challengers_Bengaluru_Logo.svg/240px-Royal_Challengers_Bengaluru_Logo.svg.png" alt="Royal Challengers Bangalore Logo" />
-        <span>Royal Challengers Bangalore</span>
+        <!-- <span>Royal Challengers Bangalore</span> -->
       </div>
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/360px-Delhi_Capitals.svg.png" alt="Delhi Capitals Logo" />
-        <span>Delhi Capitals</span>
+        <!-- <span>Delhi Capitals</span> -->
       </div>
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/263px-Kolkata_Knight_Riders_Logo.svg.png" alt="Kolkata Knight Riders Logo" />
-        <span>Kolkata Knight Riders</span>
+        <!-- <span>Kolkata Knight Riders</span> -->
       </div>
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png" alt="Sunrisers Hyderabad Logo" />
-        <span>Sunrisers Hyderabad</span>
+        <!-- <span>Sunrisers Hyderabad</span> -->
       </div>
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/This_is_the_logo_for_Rajasthan_Royals%2C_a_cricket_team_playing_in_the_Indian_Premier_League_%28IPL%29.svg/300px-This_is_the_logo_for_Rajasthan_Royals%2C_a_cricket_team_playing_in_the_Indian_Premier_League_%28IPL%29.svg.png" alt="Rajasthan Royals Logo" />
-        <span>Rajasthan Royals</span>
+        <!-- <span>Rajasthan Royals</span> -->
       </div>
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/255px-Punjab_Kings_Logo.svg.png" alt="Punjab Kings Logo" />
-        <span>Punjab Kings</span>
+        <!-- <span>Punjab Kings</span> -->
       </div>
       <!-- Duplicate the set for seamless looping -->
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/1200px-Chennai_Super_Kings_Logo.svg.png" alt="Chennai Super Kings Logo" />
-        <span>Chennai Super Kings</span>
+        <!-- <span>Chennai Super Kings</span> -->
       </div>
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/sa/b/b3/Mumbai_Indians_Logo.png?20120501114446" alt="Mumbai Indians Logo" />
-        <span>Mumbai Indians</span>
+        <!-- <span>Mumbai Indians</span> -->
       </div>
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Royal_Challengers_Bengaluru_Logo.svg/240px-Royal_Challengers_Bengaluru_Logo.svg.png" alt="Royal Challengers Bangalore Logo" />
-        <span>Royal Challengers Bangalore</span>
+        <!-- <span>Royal Challengers Bangalore</span> -->
       </div>
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/360px-Delhi_Capitals.svg.png" alt="Delhi Capitals Logo" />
-        <span>Delhi Capitals</span>
+        <!-- <span>Delhi Capitals</span> -->
       </div>
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/263px-Kolkata_Knight_Riders_Logo.svg.png" alt="Kolkata Knight Riders Logo" />
-        <span>Kolkata Knight Riders</span>
+        <!-- <span>Kolkata Knight Riders</span> -->
       </div>
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png" alt="Sunrisers Hyderabad Logo" />
-        <span>Sunrisers Hyderabad</span>
+        <!-- <span>Sunrisers Hyderabad</span> -->
       </div>
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/This_is_the_logo_for_Rajasthan_Royals%2C_a_cricket_team_playing_in_the_Indian_Premier_League_%28IPL%29.svg/300px-This_is_the_logo_for_Rajasthan_Royals%2C_a_cricket_team_playing_in_the_Indian_Premier_League_%28IPL%29.svg.png" alt="Rajasthan Royals Logo" />
-        <span>Rajasthan Royals</span>
+        <!-- <span>Rajasthan Royals</span> -->
       </div>
       <div class="team">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/255px-Punjab_Kings_Logo.svg.png" alt="Punjab Kings Logo" />
-        <span>Punjab Kings</span>
+        <!-- <span>Punjab Kings</span> -->
       </div>
     </div>
   </div>
 </section>
-
-
-
 
   <!-- Schedule Section with Pagination -->
   <section class="schedule-section" id="schedule">
@@ -1472,7 +1630,8 @@ body.dark-mode .faq-answer p {
       </div>
     </div>
   </div>
-  <!-- Payment Modal (Integrated Payment Gateway with User Details) -->
+
+  <!-- Updated Payment Modal with Google Pay and QR Code options -->
   <div id="payment-modal" class="modal">
     <div class="modal-content" style="max-width:500px; margin: auto;">
       <span class="close" id="close-payment-modal">&times;</span>
@@ -1481,35 +1640,125 @@ body.dark-mode .faq-answer p {
         <form id="payment-details-form">
           <input type="text" id="payer-name" placeholder="Enter your name" required style="width: 100%; padding: 10px; margin-bottom:10px;">
           <input type="email" id="payer-email" placeholder="Enter your email" required style="width: 100%; padding: 10px; margin-bottom:10px;">
-          <div style="margin-bottom:10px;">Total Amount: <span id="payment-amount">₹0</span></div>
-          <button type="submit" style="padding: 12px 20px; background-color: var(--secondary); color: white; border: none; border-radius: 5px; cursor: pointer;">Pay with Google Pay</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- Payment Confirmation Modal (Form using FormSubmit) -->
-  <div id="confirmation-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="close-confirmation-modal">&times;</span>
-      <div class="confirmation-container" style="padding: 30px; text-align: center;">
-        <h1>Payment Confirmation</h1>
-        <p>Please review your payment details. Your ticket will be sent to your email within 6-8 hours. If everything is correct, please add your transaction details.</p>
-        <form action="https://formsubmit.co/b9dc2bf0b0bc14a5dba84c0db88ced9c" method="POST" id="confirmation-form">
-          <!-- Hidden inputs for FormSubmit settings -->
-          <input type="hidden" name="_subject" value="New Payment Confirmation">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="text" name="name" placeholder="Name" readonly style="width: 100%; padding: 10px; margin-top:10px;">
-          <input type="email" name="email" placeholder="Email" readonly style="width: 100%; padding: 10px; margin-top:10px;">
-          <input type="text" name="amount" placeholder="Amount Paid" readonly style="width: 100%; padding: 10px; margin-top:10px;">
-          <input type="text" name="transactionId" placeholder="Transaction ID" required style="width: 100%; padding: 10px; margin-top:10px;">
-          <textarea name="remarks" placeholder="Remarks (optional)" style="width: 100%; padding: 10px; margin-top:10px;"></textarea>
-          <input type="hidden" name="_next" value="www.goticketsindia/thankyou.html">
-          <button type="submit" style="padding: 12px 20px; background-color: var(--secondary); color: white; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">Submit Payment Details</button>
+          <input type="text" id="payer-mobile" placeholder="Enter your mobile number" required style="width: 100%; padding: 10px; margin-bottom:10px;">
+          <div style="margin-bottom:15px; font-size: 18px; font-weight: 600;">Total Amount: <span id="payment-amount">₹0</span></div>
+          
+          <div class="payment-methods">
+            <h3 style="margin-bottom: 15px;">Select Payment Method</h3>
+            
+            <!-- Google Pay Button -->
+            <button type="button" id="google-pay-btn" class="payment-option-btn">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Pay_Logo_%282020%29.svg/512px-Google_Pay_Logo_%282020%29.svg.png" 
+                   alt="Google Pay" style="height: 20px; margin-right: 10px;">
+              Pay with Google Pay
+            </button>
+            
+            <!-- QR Code Button -->
+            <button type="button" id="qr-code-btn" class="payment-option-btn">
+              <i class="fas fa-qrcode" style="margin-right: 10px;"></i>
+              Pay with QR Code
+            </button>
+            
+            <!-- QR Code container (hidden by default) -->
+            <div id="qr-code-container" style="display: none; text-align: center; margin-top: 20px;">
+              <div style="background-color: white; padding: 20px; display: inline-block; border-radius: 10px;">
+                <div id="qr-code"></div>
+                <p style="margin-top: 10px; font-size: 14px;">Scan with any UPI app to pay</p>
+              </div>
+              <button type="button" id="payment-confirmed-btn" style="margin-top: 20px; padding: 10px 20px; background-color: var(--primary); color: white; border: none; border-radius: 5px; cursor: pointer;">
+                I've Made the Payment
+              </button>
+            </div>
+          </div>
         </form>
       </div>
     </div>
   </div>
 
+  <!-- Updated Confirmation Modal with Step-by-Step Process -->
+  <div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-confirmation-modal">&times;</span>
+      <div class="confirmation-container" style="padding: 30px;">
+        <h1 style="text-align: center; margin-bottom: 20px;">Payment Confirmation</h1>
+        
+        <div class="confirmation-steps">
+          <div class="confirmation-step active" id="confirmation-step-1">
+            <div class="step-indicator">1</div>
+            <h3>Verify Payment Details</h3>
+            <p>Please review your payment details below.</p>
+            
+            <div class="detail-card">
+              <div class="detail-row">
+                <span class="detail-label">Name:</span>
+                <span class="detail-value" id="confirm-name">John Doe</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Email:</span>
+                <span class="detail-value" id="confirm-email">john@example.com</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Mobile:</span>
+                <span class="detail-value" id="confirm-mobile">9876543210</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Amount Paid:</span>
+                <span class="detail-value" id="confirm-amount">₹0</span>
+              </div>
+            </div>
+            
+            <button type="button" id="next-step-btn" class="confirmation-btn">
+              Payment Completed, Continue
+            </button>
+          </div>
+          
+          <div class="confirmation-step" id="confirmation-step-2">
+            <div class="step-indicator">2</div>
+            <h3>Submit Transaction Details</h3>
+            <p>Please provide your transaction details for verification.</p>
+            
+            <form action="https://formsubmit.co/b9dc2bf0b0bc14a5dba84c0db88ced9c" method="POST" id="confirmation-form">
+              <!-- Hidden inputs for FormSubmit settings -->
+              <input type="hidden" name="_subject" value="New IPL Ticket Payment Confirmation">
+              <input type="hidden" name="_captcha" value="false">
+              
+              <!-- Hidden fields with details -->
+              <input type="hidden" name="name">
+              <input type="hidden" name="email">
+              <input type="hidden" name="amount">
+              <input type="hidden" name="mobile">
+              
+              <!-- Transaction Details -->
+              <div class="form-group">
+                <label for="transaction-id">Transaction ID / UPI Reference No.</label>
+                <input type="text" id="transaction-id" name="transactionId" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="transaction-date">Payment Date & Time</label>
+                <input type="datetime-local" id="transaction-date" name="transactionDate" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="payment-screenshot">Payment Screenshot</label>
+                <input type="file" id="payment-screenshot" name="screenshot" accept="image/*" required>
+                <small>Please upload a screenshot of your payment confirmation</small>
+              </div>
+              
+              <div class="form-group">
+                <label for="payment-remarks">Additional Information (Optional)</label>
+                <textarea id="payment-remarks" name="remarks" rows="3"></textarea>
+              </div>
+              
+              <input type="hidden" name="_next" value="https://www.goticketsindia.com/thanyou.html">
+              
+              <button type="submit" class="confirmation-btn">Submit Details</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- FAQ Section with Accordion Behavior -->
 <section class="faq-section" id="faq">
@@ -1542,7 +1791,7 @@ body.dark-mode .faq-answer p {
         <span class="faq-toggle-icon"><i class="fas fa-chevron-down"></i></span>
       </button>
       <div class="faq-answer">
-        <p>Once your payment is successfully processed, your ticket details will be emailed to you within 6–8 hours. If you don’t see the email, please check your spam folder.</p>
+        <p>Once your payment is successfully processed, your ticket details will be emailed to you within 6–8 hours. If you don't see the email, please check your spam folder.</p>
       </div>
     </div>
     
@@ -1552,7 +1801,7 @@ body.dark-mode .faq-answer p {
         <span class="faq-toggle-icon"><i class="fas fa-chevron-down"></i></span>
       </button>
       <div class="faq-answer">
-        <p>We support credit/debit cards, net banking, UPI, and mobile wallets. All transactions are securely processed using industry-standard encryption.</p>
+        <p>We support UPI payments via Google Pay and QR code scanning with any UPI app. All transactions are securely processed using industry-standard encryption.</p>
       </div>
     </div>
     
@@ -1651,112 +1900,201 @@ body.dark-mode .faq-answer p {
   </footer>
   <!-- Flatpickr JS -->
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <!-- Payment Gateway and Modal Scripts -->
+  
+  <!-- Scripts for Payment and Website Functionality -->
   <script>
     // Global variables to store payment details
     let payerName = "";
     let payerEmail = "";
+    let payerMobile = "";
     let totalAmount = "";
+    let qrCode = null;
     
-    // Payment Gateway Code (Integrated from payment.txt)
-    const upiLink = "upi://pay?pa=dome43567@ibl&pn=goticketsindia&cu=INR";
+    // DOM Elements for payment
+    const googlePayBtn = document.getElementById('google-pay-btn');
+    const qrCodeBtn = document.getElementById('qr-code-btn');
+    const qrCodeContainer = document.getElementById('qr-code-container');
+    const paymentConfirmedBtn = document.getElementById('payment-confirmed-btn');
+    
+    // Payment Gateway configuration
+    const upiBaseLink = "upi://pay?pa=dome43567@ibl&pn=goticketsindia&cu=INR";
     const googlePayPackage = "com.google.android.apps.nbu.paisa.user"; // Android
     const googlePayScheme = "gpay://"; // iOS
-
+    
+    // Platform detection
     function getPlatform() {
       const userAgent = navigator.userAgent || navigator.vendor || window.opera;
       if (/android/i.test(userAgent)) return "android";
       if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) return "ios";
       return "desktop";
     }
-
-    // Modified to show the payment confirmation modal with pre-filled details
-    function redirectToStatusPage(transactionId) {
+    
+    // Generate UPI link with amount
+    function generateUpiLink(amount) {
+      // Extract numeric amount (remove currency symbol, commas, etc.)
+      const numericAmount = parseFloat(amount.replace(/[^0-9.]/g, '')) || 0;
+      return `${upiBaseLink}&am=${numericAmount.toFixed(2)}`;
+    }
+    
+    // Generate QR code
+    function generateQRCode(upiLink) {
+      // Clear previous QR code if any
+      if (qrCode) {
+        qrCode.clear();
+      }
+      
+      const qrContainer = document.getElementById('qr-code');
+      qrContainer.innerHTML = '';
+      
+      // Create new QR code
+      qrCode = new QRCode(qrContainer, {
+        text: upiLink,
+        width: 200,
+        height: 200,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+      });
+    }
+    
+    // Redirect to status page after payment
+    function redirectToStatusPage() {
       document.getElementById("payment-modal").style.display = "none";
       const confirmationModal = document.getElementById("confirmation-modal");
-      confirmationModal.style.display = "block";
-      // Pre-fill confirmation form fields with payerName, payerEmail, and totalAmount
+      
+      // Pre-fill confirmation form fields with user details
       document.querySelector("#confirmation-form input[name='name']").value = payerName;
       document.querySelector("#confirmation-form input[name='email']").value = payerEmail;
+      document.querySelector("#confirmation-form input[name='mobile']").value = payerMobile;
       document.querySelector("#confirmation-form input[name='amount']").value = totalAmount;
-      document.querySelector("#confirmation-form input[name='transactionId']").value = transactionId;
+      
+      // Update confirmation step 1 display values
+      document.getElementById('confirm-name').textContent = payerName;
+      document.getElementById('confirm-email').textContent = payerEmail;
+      document.getElementById('confirm-mobile').textContent = payerMobile;
+      document.getElementById('confirm-amount').textContent = totalAmount;
+      
+      // Reset to step 1 and show modal
+      document.getElementById('confirmation-step-1').classList.add('active');
+      document.getElementById('confirmation-step-2').classList.remove('active');
+      confirmationModal.style.display = "block";
     }
-
-    function handleAndroidPayment() {
-  const transactionId = Date.now(); // For demo; use robust transaction ID in production
-  // Parse the numeric amount from the totalAmount text (removes currency symbols/comma)
-  const amountValue = parseFloat(totalAmount.replace(/[^0-9.]/g, '')) || 0;
-  // Append the dynamic amount to the UPI link
-  const dynamicUpiLink = upiLink + `&am=${amountValue}`;
-  const intentUrl = `intent://${dynamicUpiLink.substring(6)}#Intent;scheme=upi;package=${googlePayPackage};end`;
-  window.location.href = intentUrl;
-  setTimeout(() => {
-    redirectToStatusPage(transactionId);
-  }, 3000);
-}
-
-
-function handleIOSPayment() {
-  const transactionId = Date.now();
-  const amountValue = parseFloat(totalAmount.replace(/[^0-9.]/g, '')) || 0;
-  const iosPaymentLink = `${googlePayScheme}upi/pay?pa=dome43567@ibl&pn=goticketsindia&cu=INR&am=${amountValue}`;
-  window.location.href = iosPaymentLink;
-  setTimeout(() => {
-    redirectToStatusPage(transactionId);
-  }, 3000);
-}
-
-
-    function handleDesktopPayment() {
-      alert("Please open this page on a mobile device to make a payment using Google Pay.");
-    }
-
-    function handlePayment(event) {
-      event.preventDefault();
+    
+    // Handle Google Pay payment based on platform
+    function handleGooglePayPayment() {
+      // Validate form fields first
+      if (!validatePaymentForm()) return;
+      
       const platform = getPlatform();
+      const upiLink = generateUpiLink(totalAmount);
+      
       if (platform === "android") {
-        handleAndroidPayment();
+        // Android intent URL for Google Pay
+        const intentUrl = `intent://${upiLink.substring(6)}#Intent;scheme=upi;package=${googlePayPackage};end`;
+        window.location.href = intentUrl;
       } else if (platform === "ios") {
-        handleIOSPayment();
+        // iOS URL scheme for Google Pay
+        window.location.href = `${googlePayScheme}upi/pay?pa=dome43567@ibl&pn=goticketsindia&cu=INR&am=${parseFloat(totalAmount.replace(/[^0-9.]/g, ''))}`;
       } else {
-        handleDesktopPayment();
+        // Desktop fallback - show QR code
+        alert("Please open this on a mobile device to use Google Pay directly, or use the QR code option.");
+        showQRCode();
       }
+      
+      // For demo purposes, allow user to confirm payment after redirection
+      setTimeout(() => {
+        if (confirm("Have you completed the payment? Click OK to proceed.")) {
+          redirectToStatusPage();
+        }
+      }, 5000);
     }
-
-    // Attach submit listener to the Payment Details Form
-    document.getElementById("payment-details-form").addEventListener("submit", function(e) {
-      e.preventDefault();
-      payerName = document.getElementById("payer-name").value;
-      payerEmail = document.getElementById("payer-email").value;
-      handlePayment(e);
-    });
-
-    // Event listeners to close Payment and Confirmation modals
-    document.getElementById("close-payment-modal").addEventListener("click", () => {
-      document.getElementById("payment-modal").style.display = "none";
-    });
-    document.getElementById("close-confirmation-modal").addEventListener("click", () => {
-      document.getElementById("confirmation-modal").style.display = "none";
-    });
-    // Close modals when clicking outside the modal content
-    window.addEventListener("click", function(event) {
-      const paymentModal = document.getElementById("payment-modal");
-      const confirmationModal = document.getElementById("confirmation-modal");
-      if (event.target === paymentModal) {
-        paymentModal.style.display = "none";
+    
+    // Show QR code payment option
+    function showQRCode() {
+      // Validate form fields first
+      if (!validatePaymentForm()) return;
+      
+      // Generate and display QR code
+      const upiLink = generateUpiLink(totalAmount);
+      generateQRCode(upiLink);
+      qrCodeContainer.style.display = "block";
+      
+      // Add message with UPI details for manual entry
+      const upiDetails = document.createElement('div');
+      upiDetails.innerHTML = `
+        <p style="margin-top: 10px; font-size: 14px;">
+          UPI ID: dome43567@ibl<br>
+          Amount: ${totalAmount}
+        </p>
+      `;
+      document.getElementById('qr-code').appendChild(upiDetails);
+    }
+    
+    // Validate payment form
+    function validatePaymentForm() {
+      // Store entered values
+      payerName = document.getElementById('payer-name').value.trim();
+      payerEmail = document.getElementById('payer-email').value.trim();
+      payerMobile = document.getElementById('payer-mobile').value.trim();
+      
+      // Simple validation
+      if (!payerName) {
+        alert("Please enter your name");
+        document.getElementById('payer-name').focus();
+        return false;
       }
-      if (event.target === confirmationModal) {
-        confirmationModal.style.display = "none";
+      
+      if (!payerEmail || !payerEmail.includes('@')) {
+        alert("Please enter a valid email address");
+        document.getElementById('payer-email').focus();
+        return false;
+      }
+      
+      if (!payerMobile || payerMobile.length < 10) {
+        alert("Please enter a valid mobile number");
+        document.getElementById('payer-mobile').focus();
+        return false;
+      }
+      
+      return true;
+    }
+    
+    // Event listener for Google Pay button
+    if (googlePayBtn) {
+      googlePayBtn.addEventListener('click', handleGooglePayPayment);
+    }
+    
+    // Event listener for QR Code button
+    if (qrCodeBtn) {
+      qrCodeBtn.addEventListener('click', showQRCode);
+    }
+    
+    // Event listener for Payment Confirmed button
+    if (paymentConfirmedBtn) {
+      paymentConfirmedBtn.addEventListener('click', redirectToStatusPage);
+    }
+    
+    // Confirmation steps navigation
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set current date and time for transaction date field
+      const now = new Date();
+      const tzOffset = now.getTimezoneOffset() * 60000;
+      const localISOTime = (new Date(Date.now() - tzOffset)).toISOString().slice(0, 16);
+      
+      if (document.getElementById('transaction-date')) {
+        document.getElementById('transaction-date').value = localISOTime;
+      }
+      
+      // Handle next step button
+      const nextStepBtn = document.getElementById('next-step-btn');
+      if (nextStepBtn) {
+        nextStepBtn.addEventListener('click', function() {
+          document.getElementById('confirmation-step-1').classList.remove('active');
+          document.getElementById('confirmation-step-2').classList.add('active');
+        });
       }
     });
     
-    // Mobile menu toggle functionality
-    document.getElementById("mobile-menu-toggle").addEventListener("click", function() {
-      document.querySelector("nav").classList.toggle("active");
-    });
-  </script>
-  <!-- Existing Application Scripts -->
-  <script>
     // Global variables
     let matchesData = [];
     let stadiumsData = [];
@@ -2369,49 +2707,59 @@ function handleIOSPayment() {
       proceedBtn.addEventListener("click", proceedToPayment);
     });
 
-
-
-  document.querySelectorAll('.faq-question').forEach(button => {
-    button.addEventListener('click', () => {
-      const faqItem = button.parentElement;
-      faqItem.classList.toggle('active');
+    // Close modals when clicking the close button or outside the modal
+    document.getElementById("close-payment-modal").addEventListener("click", () => {
+      document.getElementById("payment-modal").style.display = "none";
+    });
+    
+    document.getElementById("close-confirmation-modal").addEventListener("click", () => {
+      document.getElementById("confirmation-modal").style.display = "none";
+    });
+    
+    // Close modals when clicking outside
+    window.addEventListener("click", function(event) {
+      const paymentModal = document.getElementById("payment-modal");
+      const confirmationModal = document.getElementById("confirmation-modal");
       
-      // Toggle the icon between down and up
-      const icon = button.querySelector('.faq-toggle-icon i');
-      if (faqItem.classList.contains('active')) {
-        icon.classList.remove('fa-chevron-down');
-        icon.classList.add('fa-chevron-up');
-      } else {
-        icon.classList.remove('fa-chevron-up');
-        icon.classList.add('fa-chevron-down');
+      if (event.target === paymentModal) {
+        paymentModal.style.display = "none";
+      }
+      
+      if (event.target === confirmationModal) {
+        confirmationModal.style.display = "none";
       }
     });
-  });
 
+    // FAQ accordion functionality
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        faqItem.classList.toggle('active');
+        
+        // Toggle the icon between down and up
+        const icon = button.querySelector('.faq-toggle-icon i');
+        if (faqItem.classList.contains('active')) {
+          icon.classList.remove('fa-chevron-down');
+          icon.classList.add('fa-chevron-up');
+        } else {
+          icon.classList.remove('fa-chevron-up');
+          icon.classList.add('fa-chevron-down');
+        }
+      });
+    });
 
-  document.addEventListener("DOMContentLoaded", function() {
-    const themeToggleBtn = document.getElementById("theme-toggle-btn");
-    const themeIcon = themeToggleBtn.querySelector("i");
+    // Check system preference and apply default theme on page load
+    document.addEventListener("DOMContentLoaded", function() {
+      const themeToggleBtn = document.getElementById("theme-toggle-btn");
+      const themeIcon = themeToggleBtn.querySelector("i");
 
-    // Check system preference and apply default theme
-    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      document.body.classList.add("dark-mode");
-      themeIcon.classList.replace("fa-sun", "fa-moon");
-    } else {
-      themeIcon.classList.replace("fa-moon", "fa-sun");
-    }
-
-    // Toggle theme on button click
-    themeToggleBtn.addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-      if (document.body.classList.contains("dark-mode")) {
+      if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.body.classList.add("dark-mode");
         themeIcon.classList.replace("fa-sun", "fa-moon");
       } else {
         themeIcon.classList.replace("fa-moon", "fa-sun");
       }
     });
-  });
-
   </script>
 </body>
 </html>
