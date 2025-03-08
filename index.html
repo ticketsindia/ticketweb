@@ -1721,12 +1721,17 @@ body.dark-mode .form-group small {
               <!-- Hidden inputs for FormSubmit settings -->
               <input type="hidden" name="_subject" value="New IPL Ticket Payment Confirmation">
               <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="thankyou.html">
               
-              <!-- Hidden fields with details -->
-              <input type="hidden" name="name">
-              <input type="hidden" name="email">
-              <input type="hidden" name="amount">
-              <input type="hidden" name="mobile">
+              <!-- Hidden fields with booking details -->
+              <input type="hidden" name="name" id="form-name">
+              <input type="hidden" name="email" id="form-email">
+              <input type="hidden" name="amount" id="form-amount">
+              <input type="hidden" name="mobile" id="form-mobile">
+              <input type="hidden" name="match" id="form-match">
+              <input type="hidden" name="venue" id="form-venue">
+              <input type="hidden" name="seats" id="form-seats">
+              <input type="hidden" name="date" id="form-date">
               
               <!-- Transaction Details -->
               <div class="form-group">
@@ -1749,8 +1754,6 @@ body.dark-mode .form-group small {
                 <label for="payment-remarks">Additional Information (Optional)</label>
                 <textarea id="payment-remarks" name="remarks" rows="3"></textarea>
               </div>
-              
-              <input type="hidden" name="_next" value="https://www.goticketsindia.com/thanyou.html">
               
               <button type="submit" class="confirmation-btn">Submit Details</button>
             </form>
@@ -2760,6 +2763,60 @@ body.dark-mode .form-group small {
         themeIcon.classList.replace("fa-moon", "fa-sun");
       }
     });
+
+    function updateConfirmationForm() {
+  // Get current match and payment details
+  const payerName = document.getElementById('payer-name').value.trim();
+  const payerEmail = document.getElementById('payer-email').value.trim();
+  const payerMobile = document.getElementById('payer-mobile').value.trim();
+  const totalAmount = document.getElementById('payment-amount').textContent;
+  
+  // Get match details if available
+  let matchDetails = '';
+  let venueDetails = '';
+  let dateDetails = '';
+  let seatDetails = '';
+  
+  if (currentMatch) {
+    matchDetails = `${currentMatch.team1.code} vs ${currentMatch.team2.code}`;
+    venueDetails = `${currentMatch.venue}, ${currentMatch.city}`;
+    dateDetails = `${formatDate(currentMatch.date)} ${currentMatch.time}`;
+  }
+  
+  if (selectedSeats && selectedSeats.length > 0) {
+    seatDetails = selectedSeats.map(seat => seat.id).join(', ');
+  }
+  
+  // Update form hidden fields
+  document.getElementById('form-name').value = payerName;
+  document.getElementById('form-email').value = payerEmail;
+  document.getElementById('form-mobile').value = payerMobile;
+  document.getElementById('form-amount').value = totalAmount;
+  document.getElementById('form-match').value = matchDetails;
+  document.getElementById('form-venue').value = venueDetails;
+  document.getElementById('form-date').value = dateDetails;
+  document.getElementById('form-seats').value = seatDetails;
+  
+  // Also store in localStorage as a fallback for the thank you page
+  localStorage.setItem('matchDetails', matchDetails);
+  localStorage.setItem('matchDatetime', dateDetails);
+  localStorage.setItem('matchVenue', venueDetails);
+  localStorage.setItem('seatDetails', seatDetails);
+  localStorage.setItem('paymentAmount', totalAmount);
+}
+
+// Modify the next-step-btn click handler
+document.getElementById('next-step-btn').addEventListener('click', function() {
+  document.getElementById('confirmation-step-1').classList.remove('active');
+  document.getElementById('confirmation-step-2').classList.add('active');
+  updateConfirmationForm();
+});
+
+// Set current date and time for transaction date field by default
+const now = new Date();
+const tzOffset = now.getTimezoneOffset() * 60000;
+const localISOTime = (new Date(Date.now() - tzOffset)).toISOString().slice(0, 16);
+document.getElementById('transaction-date').value = localISOTime;
   </script>
 </body>
 </html>
